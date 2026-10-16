@@ -1,0 +1,11 @@
+# python3 probe_truncation_cost_exact.py   (2026-10-02 14:45)
+# system: sigma=[1.0, 2.0] eps=[1.0, 0.5] x=[0.25, 0.75] rho*=0.139 T*=1.0 n_tails=2 (as probe_antisym.py)
+# exact MSA: omega=6 tails  eta=0.3892
+G1  exact: 4pi Int r^2 c + tail vs chat0        worst rel 2.22e-15
+G2  outside R_ij: max|FMSA - exact|              3.75e-14
+G3  FMSA chat(0): quad vs get_chat_k            worst rel 1.63e-14
+
+pair  R_ij   in-core max|resid|  max|c1|   resid/c1   L2 resid/c1   chat0 exact   chat0 FMSA   rel err   resid / first-order part
+11   0.967     4.8646e-01  8.3668e-01     58.1%       38.3%        -3.86717     -3.52777    -8.78%     +3.49%
+12   1.432     7.5235e-02  3.0812e-01     24.4%       23.1%       -31.10313    -30.64024    -1.49%     +1.86%
+22   1.897     7.2148e-01  2.7555e+00     26.2%       12.6%      -191.73115   -189.32767    -1.25%    +10.09%

@@ -1,0 +1,48 @@
+# binary LJ mixture, size ratio 3.0, eps ratio 0.5, x1 =0.3, T*=1.0
+# rho*=0.03979  eta=0.4000  N=2048  L=37.1983  rc=13.500
+units lj
+atom_style atomic
+boundary p p p
+
+region box block 0 37.198315 0 37.198315 0 37.198315
+create_box 2 box
+create_atoms 1 random 614 12345 box
+create_atoms 2 random 1434 54321 box
+mass * 1.0
+velocity all create 1.0 98765 loop geom
+
+# --- soft push-off to relax the random overlaps ---
+pair_style soft 3.000
+pair_coeff * * 0.0
+variable pre equal ramp(0,120)
+fix push all adapt 1 pair soft a * * v_pre
+fix lim  all nve/limit 0.05
+timestep 0.005
+thermo 2000
+run 8000 post no
+unfix push
+unfix lim
+
+# --- full LJ 12-6, Lorentz-Berthelot, long cutoff + tail correction ---
+pair_style lj/cut 13.5000
+pair_coeff 1 1 1.000000 1.0000
+pair_coeff 2 2 0.500000 3.0000
+pair_coeff 1 2 0.707107 2.0000
+pair_modify tail yes
+neighbor 0.5 bin
+
+fix nvt all nvt temp 1.0 1.0 0.500
+thermo 5000
+run 30000 post no
+reset_timestep 0
+
+# --- production: partial g_ij and thermodynamic averages ---
+compute rdf all rdf 450 1 1 1 2 2 2 cutoff 13.5000
+fix grdf all ave/time 25 8000 200000 c_rdf[*] file rdf.out mode vector
+variable Ustar equal pe
+variable Pstar equal press
+variable Tstar equal temp
+fix tstat all ave/time 25 400 10000 v_Ustar v_Pstar v_Tstar &
+    file thermo.out
+run 200000 post no
+print "MD_DONE natoms=$(count(all))"

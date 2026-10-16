@@ -1,0 +1,94 @@
+kind,tstar,eps,x1,rho_star,n_points,quality,n_suspect,note,file
+dcf,1.0,0.5,0.25,0.139,100,OK,0,,dcf/T1_eps0.50_x0.2500.csv
+dcf,1.0,0.5,0.75,0.303,100,OK,0,T*-inferred,dcf/T1_eps0.50_x0.7500.csv
+dcf,1.0,0.5,0.9502,,100,OK,0,,dcf/T1_eps0.50_x0.9502.csv
+dcf,1.0,1.0,0.0498,0.115,100,OK,3,,dcf/T1_eps1.00_x0.0498.csv
+dcf,1.0,1.0,0.0995,0.127,100,OK,0,,dcf/T1_eps1.00_x0.0995.csv
+dcf,1.0,1.0,0.5,0.2,98,PARTIAL,2,98/100 R* points (2 lost to OCR damage),dcf/T1_eps1.00_x0.5000.csv
+dcf,1.0,1.0,0.75,0.338,100,OK,0,,dcf/T1_eps1.00_x0.7500.csv
+dcf,1.0,1.0,0.9005,0.494,98,PARTIAL,4,98/100 R* points (2 lost to OCR damage),dcf/T1_eps1.00_x0.9005.csv
+dcf,2.0,0.5,0.9001,0.247,90,PARTIAL,3,90/100 R* points (10 lost to OCR damage),dcf/T2_eps0.50_x0.9001.csv
+dcf,2.0,0.5,0.9502,0.274,92,PARTIAL,7,T*-inferred;92/100 R* points (8 lost to OCR damage),dcf/T2_eps0.50_x0.9502.csv
+dcf,2.0,1.0,0.0995,0.098,76,SPARSE,3,76/100 R* points (24 lost to OCR damage),dcf/T2_eps1.00_x0.0995.csv
+dcf,2.0,1.0,0.1001,0.102,78,SPARSE,3,78/100 R* points (22 lost to OCR damage),dcf/T2_eps1.00_x0.1001.csv
+dcf,2.0,1.0,0.25,0.117,98,PARTIAL,3,eps-inferred;98/100 R* points (2 lost to OCR damage),dcf/T2_eps1.00_x0.2500.csv
+dcf,2.0,1.0,0.5,,96,PARTIAL,3,T*-inferred;96/100 R* points (4 lost to OCR damage),dcf/T2_eps1.00_x0.5000.csv
+dcf,2.0,1.0,0.75,0.218,100,OK,2,T*-inferred,dcf/T2_eps1.00_x0.7500.csv
+dcf,2.0,1.0,0.9001,0.28,98,PARTIAL,4,eps-inferred;98/100 R* points (2 lost to OCR damage),dcf/T2_eps1.00_x0.9001.csv
+dcf,2.0,1.0,0.9502,0.298,94,PARTIAL,0,94/100 R* points (6 lost to OCR damage),dcf/T2_eps1.00_x0.9502.csv
+dcf,2.0,1.5,0.0999,0.11,76,SPARSE,5,76/100 R* points (24 lost to OCR damage),dcf/T2_eps1.50_x0.0999.csv
+dcf,2.0,1.5,0.25,0.126,78,SPARSE,3,78/100 R* points (22 lost to OCR damage),dcf/T2_eps1.50_x0.2500.csv
+dcf,2.0,1.5,0.5,0.165,98,PARTIAL,5,eps-inferred;98/100 R* points (2 lost to OCR damage),dcf/T2_eps1.50_x0.5000.csv
+dcf,2.0,1.5,0.9001,0.306,98,PARTIAL,3,T*-inferred;98/100 R* points (2 lost to OCR damage),dcf/T2_eps1.50_x0.9001.csv
+dcf,2.0,1.5,0.9502,0.322,82,SPARSE,32,eps-inferred;82/100 R* points (18 lost to OCR damage),dcf/T2_eps1.50_x0.9502.csv
+dcf,2.0,2.0,0.0498,0.111,96,PARTIAL,3,eps-inferred;96/100 R* points (4 lost to OCR damage),dcf/T2_eps2.00_x0.0498.csv
+dcf,2.0,2.0,0.25,0.134,78,SPARSE,7,eps-inferred;78/100 R* points (22 lost to OCR damage),dcf/T2_eps2.00_x0.2500.csv
+dcf,2.0,2.0,0.5,0.177,96,PARTIAL,1,T*-inferred;eps-inferred;96/100 R* points (4 lost to OCR damage),dcf/T2_eps2.00_x0.5000.csv
+dcf,2.0,2.0,0.9502,,72,SPARSE,2,T*-inferred;eps-inferred;72/100 R* points (28 lost to OCR damage),dcf/T2_eps2.00_x0.9502.csv
+dcf,3.0,0.5,0.5,0.078,96,PARTIAL,1,96/100 R* points (4 lost to OCR damage),dcf/T3_eps0.50_x0.5000.csv
+dcf,3.0,0.5,0.75,,94,PARTIAL,2,T*-inferred;94/100 R* points (6 lost to OCR damage),dcf/T3_eps0.50_x0.7500.csv
+dcf,3.0,0.5,0.9001,0.151,92,PARTIAL,2,92/100 R* points (8 lost to OCR damage),dcf/T3_eps0.50_x0.9001.csv
+dcf,3.0,0.5,0.9502,0.158,70,SPARSE,30,70/100 R* points (30 lost to OCR damage),dcf/T3_eps0.50_x0.9502.csv
+dcf,3.0,1.0,0.9502,0.163,78,SPARSE,3,T*-inferred;78/100 R* points (22 lost to OCR damage),dcf/T3_eps1.00_x0.9502.csv
+dcf,3.0,1.5,0.0498,0.089,98,PARTIAL,2,T*-inferred;98/100 R* points (2 lost to OCR damage),dcf/T3_eps1.50_x0.0498.csv
+dcf,3.0,1.5,0.0999,0.092,94,PARTIAL,1,94/100 R* points (6 lost to OCR damage),dcf/T3_eps1.50_x0.0999.csv
+dcf,3.0,1.5,0.9001,0.167,98,PARTIAL,2,T*-inferred;98/100 R* points (2 lost to OCR damage),dcf/T3_eps1.50_x0.9001.csv
+dcf,3.0,3.0,0.0498,0.081,74,SPARSE,6,74/100 R* points (26 lost to OCR damage),dcf/T3_eps3.00_x0.0498.csv
+dcf,3.0,3.0,0.25,0.11,74,SPARSE,6,74/100 R* points (26 lost to OCR damage),dcf/T3_eps3.00_x0.2500.csv
+dcf,3.0,3.0,0.5,0.164,98,PARTIAL,7,98/100 R* points (2 lost to OCR damage),dcf/T3_eps3.00_x0.5000.csv
+dcf,3.0,3.0,0.75,0.174,92,PARTIAL,6,92/100 R* points (8 lost to OCR damage),dcf/T3_eps3.00_x0.7500.csv
+dcf,3.0,3.0,0.9001,0.195,86,SPARSE,13,T*-inferred;86/100 R* points (14 lost to OCR damage),dcf/T3_eps3.00_x0.9001.csv
+rdf,1.0,0.5,0.0995,0.121,63,PARTIAL,27,eps-inferred;63/67 R* points (4 lost to OCR damage),rdf/T1_eps0.50_x0.0995.csv
+rdf,1.0,0.5,0.25,0.139,66,PARTIAL,4,eps-inferred;66/67 R* points (1 lost to OCR damage),rdf/T1_eps0.50_x0.2500.csv
+rdf,1.0,0.5,0.5,0.19,65,PARTIAL,4,T*-inferred;eps-inferred;65/67 R* points (2 lost to OCR damage),rdf/T1_eps0.50_x0.5000.csv
+rdf,1.0,0.5,0.75,0.303,65,PARTIAL,1,65/67 R* points (2 lost to OCR damage),rdf/T1_eps0.50_x0.7500.csv
+rdf,1.0,0.5,0.9005,0.583,65,PARTIAL,14,eps-inferred;65/67 R* points (2 lost to OCR damage),rdf/T1_eps0.50_x0.9005.csv
+rdf,1.0,1.0,0.0498,,63,PARTIAL,3,eps-inferred;63/67 R* points (4 lost to OCR damage),rdf/T1_eps1.00_x0.0498.csv
+rdf,1.0,1.0,0.0995,0.127,66,PARTIAL,0,eps-inferred;66/67 R* points (1 lost to OCR damage),rdf/T1_eps1.00_x0.0995.csv
+rdf,1.0,1.0,0.1001,0.147,65,PARTIAL,8,eps-inferred;65/67 R* points (2 lost to OCR damage),rdf/T1_eps1.00_x0.1001.csv
+rdf,1.0,1.0,0.25,0.2,66,PARTIAL,0,eps-inferred;66/67 R* points (1 lost to OCR damage),rdf/T1_eps1.00_x0.2500.csv
+rdf,1.0,1.0,0.75,0.319,67,OK,6,T*-inferred;eps-inferred,rdf/T1_eps1.00_x0.7500.csv
+rdf,1.0,1.0,0.9005,0.494,65,PARTIAL,0,eps-inferred;65/67 R* points (2 lost to OCR damage),rdf/T1_eps1.00_x0.9005.csv
+rdf,1.0,1.0,0.9502,0.598,64,PARTIAL,0,eps-inferred;64/67 R* points (3 lost to OCR damage),rdf/T1_eps1.00_x0.9502.csv
+rdf,1.0,1.5,0.0498,0.128,66,PARTIAL,9,66/67 R* points (1 lost to OCR damage),rdf/T1_eps1.50_x0.0498.csv
+rdf,1.0,1.5,0.0995,0.131,66,PARTIAL,6,eps-inferred;66/67 R* points (1 lost to OCR damage),rdf/T1_eps1.50_x0.0995.csv
+rdf,2.0,0.5,0.0498,0.091,66,PARTIAL,4,66/67 R* points (1 lost to OCR damage),rdf/T2_eps0.50_x0.0498.csv
+rdf,2.0,0.5,0.25,0.107,66,PARTIAL,0,66/67 R* points (1 lost to OCR damage),rdf/T2_eps0.50_x0.2500.csv
+rdf,2.0,0.5,0.5,,66,PARTIAL,0,66/67 R* points (1 lost to OCR damage),rdf/T2_eps0.50_x0.5000.csv
+rdf,2.0,0.5,0.9502,0.274,66,PARTIAL,2,66/67 R* points (1 lost to OCR damage),rdf/T2_eps0.50_x0.9502.csv
+rdf,2.0,1.0,0.0995,0.098,67,OK,2,,rdf/T2_eps1.00_x0.0995.csv
+rdf,2.0,1.0,0.1001,0.102,67,OK,2,,rdf/T2_eps1.00_x0.1001.csv
+rdf,2.0,1.0,0.25,0.117,65,PARTIAL,4,65/67 R* points (2 lost to OCR damage),rdf/T2_eps1.00_x0.2500.csv
+rdf,2.0,1.0,0.9502,0.298,63,PARTIAL,0,63/67 R* points (4 lost to OCR damage),rdf/T2_eps1.00_x0.9502.csv
+rdf,2.0,1.5,0.5,0.165,64,PARTIAL,4,64/67 R* points (3 lost to OCR damage),rdf/T2_eps1.50_x0.5000.csv
+rdf,2.0,1.5,0.75,0.244,65,PARTIAL,10,65/67 R* points (2 lost to OCR damage),rdf/T2_eps1.50_x0.7500.csv
+rdf,2.0,1.5,0.9001,0.306,65,PARTIAL,0,65/67 R* points (2 lost to OCR damage),rdf/T2_eps1.50_x0.9001.csv
+rdf,2.0,1.5,0.9502,0.322,63,PARTIAL,0,63/67 R* points (4 lost to OCR damage),rdf/T2_eps1.50_x0.9502.csv
+rdf,2.0,2.0,0.0498,0.111,63,PARTIAL,12,eps-inferred;63/67 R* points (4 lost to OCR damage),rdf/T2_eps2.00_x0.0498.csv
+rdf,2.0,2.0,0.0999,0.116,67,OK,0,eps-inferred,rdf/T2_eps2.00_x0.0999.csv
+rdf,2.0,2.0,0.1001,0.116,61,PARTIAL,10,eps-inferred;61/67 R* points (6 lost to OCR damage),rdf/T2_eps2.00_x0.1001.csv
+rdf,2.0,2.0,0.25,0.134,67,OK,0,eps-inferred,rdf/T2_eps2.00_x0.2500.csv
+rdf,3.0,0.5,0.0498,0.076,65,PARTIAL,0,eps-inferred;65/67 R* points (2 lost to OCR damage),rdf/T3_eps0.50_x0.0498.csv
+rdf,3.0,0.5,0.0999,0.078,66,PARTIAL,2,T*-inferred;66/67 R* points (1 lost to OCR damage),rdf/T3_eps0.50_x0.0999.csv
+rdf,3.0,0.5,0.25,0.105,65,PARTIAL,6,eps-inferred;65/67 R* points (2 lost to OCR damage),rdf/T3_eps0.50_x0.2500.csv
+rdf,3.0,0.5,0.75,0.131,64,PARTIAL,0,eps-inferred;64/66 R* points (2 lost to OCR damage),rdf/T3_eps0.50_x0.7500.csv
+rdf,3.0,1.0,0.0498,,66,PARTIAL,0,T*-inferred;eps-inferred;66/67 R* points (1 lost to OCR damage),rdf/T3_eps1.00_x0.0498.csv
+rdf,3.0,1.0,0.25,0.094,67,OK,0,eps-inferred,rdf/T3_eps1.00_x0.2500.csv
+rdf,3.0,1.0,0.5,0.117,67,OK,2,eps-inferred,rdf/T3_eps1.00_x0.5000.csv
+rdf,3.0,1.0,0.75,0.143,64,PARTIAL,4,eps-inferred;64/67 R* points (3 lost to OCR damage),rdf/T3_eps1.00_x0.7500.csv
+rdf,3.0,1.0,0.9001,0.159,66,PARTIAL,3,T*-inferred;eps-inferred;66/67 R* points (1 lost to OCR damage),rdf/T3_eps1.00_x0.9001.csv
+rdf,3.0,1.0,0.9502,0.163,66,PARTIAL,0,66/67 R* points (1 lost to OCR damage),rdf/T3_eps1.00_x0.9502.csv
+rdf,3.0,1.5,0.9001,0.167,67,OK,0,,rdf/T3_eps1.50_x0.9001.csv
+rdf,3.0,1.5,0.9502,0.167,64,PARTIAL,0,T*-inferred;eps-inferred;64/67 R* points (3 lost to OCR damage),rdf/T3_eps1.50_x0.9502.csv
+rdf,3.0,2.0,0.0995,0.096,67,OK,0,T*-inferred;eps-inferred,rdf/T3_eps2.00_x0.0995.csv
+rdf,3.0,2.0,0.25,0.11,66,PARTIAL,2,eps-inferred;66/67 R* points (1 lost to OCR damage),rdf/T3_eps2.00_x0.2500.csv
+rdf,3.0,2.0,0.5,0.143,67,OK,0,T*-inferred;eps-inferred,rdf/T3_eps2.00_x0.5000.csv
+rdf,3.0,2.0,0.75,0.174,67,OK,4,eps-inferred,rdf/T3_eps2.00_x0.7500.csv
+rdf,3.0,2.0,0.9001,,67,OK,0,eps-inferred,rdf/T3_eps2.00_x0.9001.csv
+rdf,3.0,2.0,0.9502,,67,OK,0,eps-inferred,rdf/T3_eps2.00_x0.9502.csv
+rdf,3.0,3.0,0.0498,0.107,64,PARTIAL,18,64/67 R* points (3 lost to OCR damage),rdf/T3_eps3.00_x0.0498.csv
+rdf,3.0,3.0,0.0995,0.126,66,PARTIAL,2,T*-inferred;eps-inferred;66/67 R* points (1 lost to OCR damage),rdf/T3_eps3.00_x0.0995.csv
+rdf,3.0,3.0,0.1001,0.105,66,PARTIAL,0,66/67 R* points (1 lost to OCR damage),rdf/T3_eps3.00_x0.1001.csv
+rdf,3.0,3.0,0.5,,62,PARTIAL,0,eps-inferred;62/67 R* points (5 lost to OCR damage),rdf/T3_eps3.00_x0.5000.csv
+rdf,3.0,3.0,0.75,0.213,66,PARTIAL,2,66/67 R* points (1 lost to OCR damage),rdf/T3_eps3.00_x0.7500.csv
+rdf,3.0,3.0,0.9005,0.178,62,PARTIAL,2,eps-inferred;62/67 R* points (5 lost to OCR damage),rdf/T3_eps3.00_x0.9005.csv

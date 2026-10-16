@@ -1,0 +1,185 @@
+{
+  "source": {
+    "authors": "C. Caccamo, D. Costa, G. Pellicane",
+    "title": "A comprehensive study of the phase diagram of symmetrical hard-core Yukawa mixtures",
+    "journal": "J. Chem. Phys.",
+    "volume": 109,
+    "number": 11,
+    "pages": "4498-4507",
+    "year": 1998,
+    "doi": "10.1063/1.477053",
+    "pdf": "pdf/sources_paywall/VLE_LLE_YK/A comprehensive study of the phase diagram of symmetrical hard-core Yukawa mixtures.pdf",
+    "tables": "TABLE I (journal p. 4502, PDF page 5) and TABLE II (journal p. 4503, PDF page 6)",
+    "transcribed": "2026-08-19, from 200 dpi renders of PDF pages 5 and 6, not from pdftotext",
+    "transcription_note": "pdftotext on this scan is UNUSABLE for these tables. It renders the minus sign as the digit 2 (so P* = -0.25 comes out as '20.25' and -mu = -2.64 as '2 m 2.64'), renders '=' as '5' (nu = 0.7 becomes 'n 50.7'), and renders the parenthesised last-digit uncertainties '(1)' as '~1!'. Every number below was read off the rendered image."
+  },
+
+  "potential": {
+    "form": "v_ij(r) = +inf for r < sigma;  v_ij(r) = -K_ij * exp[-z*(r-sigma)] / (r/sigma) for r >= sigma   [their Eq. (1), sigma = 1]",
+    "symmetry": "sigma_1 = sigma_2 = 1 (EQUAL DIAMETERS) and K_11 = K_22; the two species differ ONLY in the cross strength.",
+    "nu": "nu = K_12 / K_11, the cross-to-like ratio. Studied here at nu = 0.7 and nu = 0.9, both with z = 2.45.",
+    "reduced_units": "T* = k_B T / K_11, rho* = rho * sigma^3, chi_i = rho_i / rho.",
+    "note_on_our_convention": "IDENTICAL to this project's N=1 contact normalisation extended to a mixture. With sigma = 1 our tail is K_ij * exp(-z*(r-1))/r, so K_11 = K_22 = 1/T*, K_12 = K_21 = nu/T*, and z is the same for every pair. No unit conversion, no LJ->Yukawa mapping. Identical model to Mkanya et al. 2017 (their alpha == this nu, their epsilon_ij == this K_ij); see reference_mkanya2017.json."
+  },
+
+  "warnings": [
+    "THE LIQUID-VAPOUR BRANCH CARRIES NO COMPOSITION INFORMATION. In Table I, chi_v = chi_l = 0.50 (1) in EVERY row of both mixtures -- forced by the sigma_1 = sigma_2, K_11 = K_22 symmetry. A T-x-y diagram of this VLE is therefore a vertical line at x = 0.5 and measures nothing. Composition only becomes a live variable on the liquid-liquid branch, Table II.",
+    "AT nu = 0.7 THE TABLE I LIQUID BRANCH IS METASTABLE, AND THE PAPER SAYS SO. Journal p. 4502: 'the GEMC yielding liquid-vapor coexistence is not able to capture a three phase equilibrium, since this would require, in principle, a third simulation box; it follows that the (homogeneous) liquid branch of the GEMC binodal has to be considered as a metastable one.' Above the crossover density rho*_e = 0.57 the true equilibrium is liquid-liquid. Scoring a theory's STABLE binodal against the nu = 0.7 liquid branch compares against a metastable reference and will read as a model failure. The nu = 0.9 mixture is not flagged this way.",
+    "DEMIXING NEEDS det M = 0, NOT dP/drho. The liquid-liquid instability of a symmetric mixture is a COMPOSITION instability: it occurs at fixed total density with the mechanical stability condition still satisfied. Locating it from dbetaP/drho|_{T,x} returns 'no transition'. Use det M = 0 with M_ij = delta_ij/rho_i - chat_ij(0).",
+    "SUSPECTED PRINT ERROR, Table II, last row. At rho* = 1.00 the -e column runs 5.19, 5.07, 4.97, 4.91, 4.89, 4.84, then 3.59 (6) at T* = 1.32. Every other isochore is smooth and monotone; 3.59 breaks the trend by ~1.25 where neighbouring steps are ~0.05. It reproduces identically in the render and in pdftotext, so it is printed, not an extraction artefact. Flagged, transcribed verbatim, and excluded from any fit of e(T) along that isochore.",
+    "Table II is a set of ISOCHORES, not isobars. Each block fixes rho* and scans T*, so the natural plot is T* vs chi at constant density -- not the constant-pressure T-x-y of chemical engineering. P* is reported (and is negative at the low-T end of rho* = 0.60 and 0.70), it is not controlled."
+  ],
+
+  "vle": {
+    "description": "TABLE I. GEMC, N = 400 total particles, two boxes, equimolar. Liquid-vapour coexistence.",
+    "columns": ["tstar", "rho_vap", "rho_liq", "chi1_vap", "chi1_liq", "p_vap", "p_liq", "mu1_vap", "mu1_liq", "mu2_vap", "mu2_liq", "e_vap", "e_liq"],
+    "sign_note": "The paper prints the columns -mu and -e. The values stored here are mu and e THEMSELVES, i.e. already negated back to physical (negative) values. P* is in K_aa/sigma^3 units, mu and e in K_aa units.",
+    "uncertainty_note": "'uncert' rows are absolute, converted from the paper's parenthesised last-digit convention (e.g. 0.77 (2) -> 0.02, 0.017 (1) -> 0.001, 3.55 (11) -> 0.11).",
+
+    "nu_0.7": {
+      "nu": 0.7, "z": 2.45, "n_particles": 400,
+      "metastable_liquid_branch": true,
+      "data": [
+        [0.60, 0.03, 0.77, 0.50, 0.50, 0.017, 0.014, -2.64, -2.64, -2.64, -2.65, -0.18, -3.55],
+        [0.63, 0.05, 0.72, 0.50, 0.50, 0.026, 0.026, -2.56, -2.56, -2.56, -2.55, -0.29, -3.25],
+        [0.65, 0.07, 0.68, 0.50, 0.50, 0.034, 0.043, -2.52, -2.51, -2.52, -2.51, -0.38, -3.02],
+        [0.68, 0.11, 0.60, 0.50, 0.50, 0.048, 0.052, -2.47, -2.47, -2.47, -2.47, -0.56, -2.58],
+        [0.70, 0.15, 0.54, 0.50, 0.50, 0.059, 0.066, -2.44, -2.45, -2.45, -2.44, -0.73, -2.33]
+      ],
+      "uncert": [
+        [0.0, 0.01, 0.02, 0.01, 0.01, 0.001, 0.009, 0.02, 0.01, 0.02, 0.02, 0.05, 0.11],
+        [0.0, 0.01, 0.02, 0.01, 0.01, 0.001, 0.011, 0.02, 0.02, 0.02, 0.01, 0.06, 0.12],
+        [0.0, 0.01, 0.02, 0.01, 0.01, 0.001, 0.013, 0.01, 0.01, 0.02, 0.02, 0.07, 0.13],
+        [0.0, 0.01, 0.04, 0.01, 0.01, 0.001, 0.005, 0.01, 0.02, 0.01, 0.02, 0.07, 0.16],
+        [0.0, 0.02, 0.04, 0.01, 0.01, 0.001, 0.011, 0.01, 0.01, 0.01, 0.01, 0.06, 0.16]
+      ]
+    },
+
+    "nu_0.9": {
+      "nu": 0.9, "z": 2.45, "n_particles": 400,
+      "metastable_liquid_branch": false,
+      "data": [
+        [0.64, 0.02, 0.79, 0.50, 0.50, 0.013, 0.016, -2.99, -2.99, -2.99, -2.99, -0.15, -3.95],
+        [0.70, 0.05, 0.72, 0.50, 0.50, 0.026, 0.031, -2.90, -2.90, -2.90, -2.90, -0.28, -3.52],
+        [0.76, 0.10, 0.63, 0.50, 0.50, 0.049, 0.057, -2.82, -2.83, -2.82, -2.82, -0.56, -3.05],
+        [0.80, 0.17, 0.55, 0.50, 0.50, 0.070, 0.066, -2.79, -2.80, -2.79, -2.79, -0.92, -2.62]
+      ],
+      "uncert": [
+        [0.0, 0.01, 0.01, 0.01, 0.01, 0.001, 0.006, 0.02, 0.03, 0.03, 0.03, 0.07, 0.09],
+        [0.0, 0.01, 0.02, 0.01, 0.01, 0.004, 0.008, 0.06, 0.04, 0.04, 0.03, 0.09, 0.11],
+        [0.0, 0.01, 0.03, 0.01, 0.01, 0.004, 0.008, 0.03, 0.03, 0.04, 0.04, 0.11, 0.13],
+        [0.0, 0.01, 0.04, 0.01, 0.01, 0.001, 0.004, 0.01, 0.02, 0.01, 0.02, 0.14, 0.21]
+      ]
+    }
+  },
+
+  "lle": {
+    "description": "TABLE II. SGCMC, consolute-type (liquid-liquid) equilibrium, nu = 0.7 only. Each block fixes rho* and scans T*. chi_1 and chi_2 = 1 - chi_1 are the compositions of the two coexisting liquids. THIS is the composition-resolved data set; the VLE table is not.",
+    "columns": ["rho", "tstar", "chi1", "chi2", "p", "e"],
+    "sign_note": "As in the VLE block: the paper prints -e; stored values are e itself. P* is printed signed and stored as printed (negative entries are real).",
+    "nu": 0.7, "z": 2.45,
+    "data": [
+      [0.60, 0.50, 0.02, 0.98, -0.25, -3.92],
+      [0.60, 0.57, 0.05, 0.94, -0.19, -3.46],
+      [0.60, 0.65, 0.14, 0.86, -0.12, -2.86],
+      [0.60, 0.68, 0.19, 0.81, -0.03, -2.76],
+      [0.60, 0.70, 0.23, 0.76,  0.04, -2.69],
+      [0.60, 0.72, 0.28, 0.72,  0.10, -2.64],
+
+      [0.70, 0.60, 0.05, 0.95, -0.32, -3.44],
+      [0.70, 0.70, 0.10, 0.90,  0.09, -3.29],
+      [0.70, 0.75, 0.14, 0.86,  0.32, -3.23],
+      [0.70, 0.80, 0.19, 0.80,  0.57, -3.15],
+      [0.70, 0.82, 0.23, 0.77,  0.66, -3.12],
+      [0.70, 0.85, 0.29, 0.70,  0.80, -3.07],
+
+      [0.75, 0.70, 0.07, 0.93,  0.22, -3.61],
+      [0.75, 0.80, 0.13, 0.88,  0.80, -3.50],
+      [0.75, 0.84, 0.16, 0.84,  1.02, -3.45],
+      [0.75, 0.88, 0.21, 0.79,  1.26, -3.40],
+      [0.75, 0.90, 0.24, 0.76,  1.40, -3.36],
+      [0.75, 0.92, 0.28, 0.72,  1.52, -3.33],
+
+      [0.80, 0.80, 0.09, 0.92,  1.16, -3.85],
+      [0.80, 0.85, 0.11, 0.89,  1.49, -3.80],
+      [0.80, 0.90, 0.15, 0.85,  1.81, -3.74],
+      [0.80, 0.94, 0.19, 0.81,  2.15, -3.69],
+      [0.80, 0.97, 0.23, 0.77,  2.38, -3.64],
+      [0.80, 1.00, 0.28, 0.72,  2.58, -3.59],
+
+      [1.00, 0.95, 0.05, 0.95,  7.77, -5.19],
+      [1.00, 1.10, 0.09, 0.91, 10.25, -5.07],
+      [1.00, 1.20, 0.14, 0.86, 11.95, -4.97],
+      [1.00, 1.25, 0.18, 0.83, 12.62, -4.91],
+      [1.00, 1.27, 0.19, 0.81, 13.23, -4.89],
+      [1.00, 1.30, 0.22, 0.78, 13.52, -4.84],
+      [1.00, 1.32, 0.24, 0.75, 13.96, -3.59]
+    ],
+    "uncert": [
+      [0.0, 0.0, 0.01, 0.01, 0.03, 0.06],
+      [0.0, 0.0, 0.01, 0.01, 0.02, 0.06],
+      [0.0, 0.0, 0.03, 0.03, 0.01, 0.06],
+      [0.0, 0.0, 0.05, 0.05, 0.01, 0.06],
+      [0.0, 0.0, 0.07, 0.07, 0.01, 0.06],
+      [0.0, 0.0, 0.08, 0.08, 0.01, 0.06],
+
+      [0.0, 0.0, 0.01, 0.01, 0.03, 0.04],
+      [0.0, 0.0, 0.02, 0.02, 0.02, 0.04],
+      [0.0, 0.0, 0.03, 0.04, 0.03, 0.04],
+      [0.0, 0.0, 0.05, 0.05, 0.01, 0.05],
+      [0.0, 0.0, 0.06, 0.06, 0.02, 0.05],
+      [0.0, 0.0, 0.08, 0.08, 0.01, 0.05],
+
+      [0.0, 0.0, 0.02, 0.02, 0.04, 0.04],
+      [0.0, 0.0, 0.03, 0.03, 0.03, 0.04],
+      [0.0, 0.0, 0.04, 0.04, 0.01, 0.05],
+      [0.0, 0.0, 0.06, 0.05, 0.04, 0.05],
+      [0.0, 0.0, 0.07, 0.07, 0.03, 0.06],
+      [0.0, 0.0, 0.08, 0.08, 0.01, 0.06],
+
+      [0.0, 0.0, 0.02, 0.02, 0.04, 0.04],
+      [0.0, 0.0, 0.03, 0.03, 0.03, 0.04],
+      [0.0, 0.0, 0.04, 0.04, 0.02, 0.05],
+      [0.0, 0.0, 0.05, 0.05, 0.02, 0.06],
+      [0.0, 0.0, 0.06, 0.07, 0.03, 0.07],
+      [0.0, 0.0, 0.08, 0.08, 0.03, 0.06],
+
+      [0.0, 0.0, 0.01, 0.01, 0.09, 0.04],
+      [0.0, 0.0, 0.02, 0.02, 0.17, 0.05],
+      [0.0, 0.0, 0.03, 0.03, 0.05, 0.06],
+      [0.0, 0.0, 0.05, 0.04, 0.13, 0.07],
+      [0.0, 0.0, 0.05, 0.05, 0.06, 0.08],
+      [0.0, 0.0, 0.06, 0.06, 0.09, 0.08],
+      [0.0, 0.0, 0.07, 0.07, 0.09, 0.06]
+    ]
+  },
+
+  "critical_points": {
+    "note": "GEMC liquid-vapour critical points, obtained by fitting rho_l - rho_v ~ |T - T_cr|^beta (their Eq. 7) with the NONCLASSICAL beta = 0.32 held fixed, plus the law of rectilinear diameters for rho_cr. Journal p. 4502.",
+    "gemc_lv": [
+      {"nu": 0.9, "tstar_cr": 0.82, "rho_cr": 0.35},
+      {"nu": 0.7, "tstar_cr": 0.72, "rho_cr": 0.34}
+    ],
+    "mhnc_lv": [
+      {"nu": 0.9, "tstar_cr": 0.83, "rho_cr": 0.35, "beta_eff": 0.34,
+       "note": "beta was FITTED here (0.34), not held at 0.32 as for the GEMC points. MHNC did not converge for 0.80 < T* < 0.88, so the fit uses binodal points up to T* = 0.8 only."}
+    ],
+    "mhnc_lv_nu_0.7": "NOT AVAILABLE. 'a calculation of the critical parameters turns out to be not feasible at nu = 0.7, since the solution algorithm of the MHNC ceases to work well before the critical region can be approached.'"
+  },
+
+  "cep": {
+    "note": "Critical end point / crossover from liquid-vapour to liquid-liquid equilibrium, nu = 0.7. Obtained by extrapolating the SGCMC line of consolute critical points (fitted with Delta chi ~ |T - T_cr|^beta, beta = 0.32 fixed) to its intersection with the binodal. Journal p. 4504.",
+    "nu": 0.7, "z": 2.45,
+    "rho_cep": 0.57, "tstar_cep": 0.70,
+    "qualifier": "The paper writes rho*_e ~= 0.57 and T*_e ~= 0.7 (approximate signs in the original); it calls the extrapolation 'very short'. Two significant figures at best.",
+    "consolute_critical_composition": 0.5,
+    "consolute_composition_note": "chi_cr = 0.5 exactly, forced by symmetry, for every consolute critical point. Only T_cr and rho are free."
+  },
+
+  "prior_msa": {
+    "citation": "C. Caccamo and G. Giunta, Mol. Phys. 78, 83 (1993)  [their ref. 15]",
+    "why_it_matters": "This is the closest precedent to an FMSA-DP calculation on this system: a plain-MSA treatment of the SAME symmetric HCY mixture, giving the liquid-vapour spinodal and the line of consolute critical points at nu = 0.7. Caccamo et al. 1998 assess it on p. 4504: 'although the MSA results are quantitatively discrepant from the simulation and from MHNC predictions (as expected given the thermodynamic inconsistency of the MSA), the location of the liquid-vapor critical density and of the crossover density are fairly well predicted.'",
+    "in_hand": false,
+    "consequence": "Sets the bar honestly: on this system MSA is expected to be quantitatively off but topologically right. A first-order FMSA-DP that reproduces rho_cep ~ 0.57 while missing T_cep is the EXPECTED outcome, not a failure."
+  }
+}

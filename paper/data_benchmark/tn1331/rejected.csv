@@ -1,0 +1,76 @@
+kind,pdf_text_line,tstar,eps,x1,reason
+rdf,4137,1.0,0.5,,unidentified state point
+rdf,4865,1.0,0.5,0.5,50/94 R* points (44 lost to OCR damage)
+rdf,6466,1.0,1.0,0.25,"duplicate state point, ambiguous header"
+rdf,6610,1.0,1.5,0.5,no rows on the R* grid
+rdf,6754,1.0,1.5,0.5,44/67 R* points (23 lost to OCR damage)
+dcf,6899,1.0,0.5,0.9005,no rows on the R* grid
+rdf,7044,,0.5,0.9502,unidentified state point
+dcf,7338,2.0,0.5,0.0999,no rows on the R* grid
+dcf,7772,2.0,0.5,0.75,no rows on the R* grid
+rdf,7915,2.0,0.5,0.25,"duplicate state point, ambiguous header"
+dcf,8629,2.0,0.5,0.5,no rows on the R* grid
+dcf,8773,2.0,0.5,0.75,no rows on the R* grid
+dcf,8915,2.0,1.0,0.9001,no rows on the R* grid
+rdf,9206,2.0,1.5,0.0498,37/53 R* points (16 lost to OCR damage)
+rdf,9347,2.0,1.5,0.0999,46/67 R* points (21 lost to OCR damage)
+rdf,9494,2.0,1.5,0.25,6 contradictory rows (neighbouring table bled in)
+rdf,10785,2.0,2.0,0.25,61/98 R* points (37 lost to OCR damage)
+dcf,10926,2.0,0.5,0.5,no rows on the R* grid
+dcf,11068,2.0,0.5,0.5,no rows on the R* grid
+dcf,11210,2.0,0.5,0.75,no rows on the R* grid
+dcf,11355,2.0,0.5,0.75,no rows on the R* grid
+rdf,11499,2.0,0.5,0.9001,no rows on the R* grid
+dcf,11645,,0.5,0.9502,unidentified state point
+rdf,12086,3.0,0.5,0.25,6 contradictory rows (neighbouring table bled in)
+rdf,12515,3.0,0.5,,unidentified state point
+rdf,12659,3.0,0.5,0.9502,6 contradictory rows (neighbouring table bled in)
+rdf,12946,3.0,1.0,,unidentified state point
+rdf,13820,3.0,1.5,0.0498,65/95 R* points (30 lost to OCR damage)
+rdf,13963,3.0,1.5,0.0999,1 contradictory rows (neighbouring table bled in)
+rdf,14394,3.0,3.0,0.75,4 contradictory rows (neighbouring table bled in)
+rdf,14971,3.0,2.0,0.0995,"duplicate state point, ambiguous header"
+rdf,15984,3.0,3.0,,unidentified state point
+rdf,16269,3.0,3.0,0.5,"duplicate state point, ambiguous header"
+rdf,16557,3.0,3.0,0.75,"duplicate state point, ambiguous header"
+dcf,20950,1.0,0.5,0.0995,2/100 R* points (98 lost to OCR damage)
+dcf,21073,1.0,0.5,0.5,24/100 R* points (76 lost to OCR damage)
+dcf,21319,1.0,1.0,0.0498,no rows on the R* grid
+dcf,21441,1.0,1.0,0.25,8/100 R* points (92 lost to OCR damage)
+dcf,21565,1.0,1.0,0.75,56/100 R* points (44 lost to OCR damage)
+dcf,21689,1.0,1.0,0.9502,50/100 R* points (50 lost to OCR damage)
+dcf,21755,1.0,1.0,0.0498,68/100 R* points (32 lost to OCR damage)
+dcf,21816,1.0,1.5,0.0995,40/100 R* points (60 lost to OCR damage)
+dcf,22063,1.0,1.0,0.9005,30/100 R* points (70 lost to OCR damage)
+dcf,22125,1.0,1.5,0.9502,no rows on the R* grid
+dcf,22187,2.0,0.5,0.0498,2/100 R* points (98 lost to OCR damage)
+dcf,22248,2.0,0.5,0.5,no rows on the R* grid
+dcf,22308,2.0,0.5,0.25,46/100 R* points (54 lost to OCR damage)
+dcf,22369,2.0,0.5,0.5,no rows on the R* grid
+dcf,22432,2.0,0.5,0.75,64/100 R* points (36 lost to OCR damage)
+dcf,23068,2.0,1.5,0.0498,20/100 R* points (80 lost to OCR damage)
+dcf,23317,2.0,1.5,0.75,42/100 R* points (58 lost to OCR damage)
+dcf,23566,2.0,2.0,0.0999,44/100 R* points (56 lost to OCR damage)
+dcf,23629,2.0,2.0,0.1001,32/100 R* points (68 lost to OCR damage)
+dcf,23891,2.0,2.0,0.5,22/100 R* points (78 lost to OCR damage)
+dcf,24332,3.0,0.5,0.5,30/100 R* points (70 lost to OCR damage)
+dcf,24394,3.0,0.5,0.5,"duplicate state point, ambiguous header"
+dcf,24719,3.0,3.0,0.0999,32/100 R* points (68 lost to OCR damage)
+dcf,24782,3.0,3.0,0.25,40/100 R* points (60 lost to OCR damage)
+dcf,24848,3.0,1.0,0.5,4/100 R* points (96 lost to OCR damage)
+dcf,24913,3.0,1.0,0.75,38/100 R* points (62 lost to OCR damage)
+dcf,24975,3.0,3.0,0.9001,50/100 R* points (50 lost to OCR damage)
+dcf,25224,3.0,1.5,0.25,20/100 R* points (80 lost to OCR damage)
+dcf,25286,3.0,1.5,0.5,no rows on the R* grid
+dcf,25347,3.0,1.5,0.75,26/100 R* points (74 lost to OCR damage)
+dcf,25475,3.0,1.5,0.9502,58/100 R* points (42 lost to OCR damage)
+dcf,25538,3.0,3.0,0.0995,40/100 R* points (60 lost to OCR damage)
+dcf,25599,3.0,3.0,0.0995,40/100 R* points (60 lost to OCR damage)
+dcf,25726,3.0,3.0,0.5,18/100 R* points (82 lost to OCR damage)
+dcf,25849,3.0,3.0,0.9001,56/100 R* points (44 lost to OCR damage)
+dcf,25912,3.0,3.0,0.9502,18/100 R* points (82 lost to OCR damage)
+dcf,25998,3.0,3.0,0.0498,no rows on the R* grid
+dcf,26061,3.0,3.0,0.0999,no rows on the R* grid
+dcf,26123,3.0,3.0,0.25,60/100 R* points (40 lost to OCR damage)
+dcf,26253,3.0,3.0,0.75,"duplicate state point, ambiguous header"
+dcf,26382,3.0,3.0,0.9502,12/100 R* points (88 lost to OCR damage)

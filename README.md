@@ -32,7 +32,11 @@ fmsa_free_energy.py       energy route (free energy, pressure, chemical potentia
 fmsa_compressibility.py   compressibility route
 examples/example_binary.py   every quantity at one binary state
 tests/test_fmsa_mixture.py   self-checks (identities and two-path cross-checks)
+paper/                    the scripts and data behind the paper's figures and numbers
 ```
+
+`paper/` is self-contained and has its own README; the package above does not
+depend on it.
 
 Keep the three modules in one directory and put it on `sys.path`; they import
 each other by module name.

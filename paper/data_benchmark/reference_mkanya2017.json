@@ -1,0 +1,79 @@
+{
+  "source": {
+    "authors": "A. Mkanya, G. Pellicane, C. Caccamo, D. Pini",
+    "title": "Theory and computer simulation of hard-core Yukawa mixtures: thermodynamical, structural and phase coexistence properties",
+    "journal": "J. Phys.: Condens. Matter",
+    "volume": 29,
+    "pages": "365102",
+    "year": 2017,
+    "doi": "10.1088/1361-648X/aa7abc",
+    "doi_note": "DOI NOT VERIFIED -- taken from the standard JPCM pattern, not read off the PDF. Confirm before it enters references.bib.",
+    "pdf": "pdf/sources_paywall/VLE_LLE_YK/Theory and computer simulation of hard-core Yukawa mixtures thermodynamical, structural and phase coexistence properties.pdf",
+    "tables": "Table 1 (journal p. 4, PDF page 5) and Table 2 (journal p. 8, PDF page 9)",
+    "page_offset": "printed page N = PDF page N+1 (the PDF carries an IOP cover sheet)",
+    "transcribed": "2026-08-19, from 200 dpi renders of PDF pages 5 and 9"
+  },
+
+  "potential": {
+    "form": "v_ij(r) = +inf for r < sigma;  v_ij(r) = -epsilon_ij * (sigma/r) * exp[-z*(r-sigma)/sigma] for r >= sigma   [their Eq. (1)]",
+    "symmetry": "sigma equal for every i,j pair (EQUAL DIAMETERS) and epsilon_11 = epsilon_22.",
+    "alpha": "alpha = epsilon_12 / epsilon_11, the cross-to-like ratio. Fixed at alpha = 0.75 throughout this paper; z = 1.8, 2.4, 3.0.",
+    "reduced_units": "T* = k_B T / epsilon_11, rho* = rho * sigma^3, c_i = rho_i / rho.",
+    "note_on_our_convention": "IDENTICAL to this project's N=1 contact normalisation extended to a mixture: with sigma = 1, K_ij = (epsilon_ij/epsilon_11)/T*, so K_11 = K_22 = 1/T* and K_12 = alpha/T*, one z for all pairs. SAME MODEL as Caccamo, Costa & Pellicane 1998 -- their nu IS this alpha and their K_ij IS this epsilon_ij, only the symbols differ. See reference_caccamo1998.json.",
+    "energy_route_identity": "Their Eq. (6) for the equimolar mixture: U/N = (rho/4) * INT dr [ v_11(r) g_11(r) + alpha * v_11(r) g_12(r) ]. This is the ordinary U/N = (rho/2) sum_ij x_i x_j INT v_ij g_ij dr specialised to x_1 = x_2 = 1/2 with v_12 = alpha*v_11 and v_22 = v_11; it is a useful direct check that a mixture energy-route implementation is normalised correctly."
+  },
+
+  "warnings": [
+    "THIS PAPER'S TABLE 1 IS A SINGLE-PHASE BENCHMARK, NOT A PHASE-EQUILIBRIUM ONE. It reports U/N, P and mu at seven prescribed (z, T*, rho*) states with c_1 = c_2 = 0.5. No coexistence solve, no free-energy integration, no inversion is needed to use it -- which makes it the cheapest mixture benchmark in the whole literature set, and the natural first target.",
+    "IT COMES WITH TWO COMPETING THEORIES ALREADY SCORED. Every state carries MC, HRT and MHNC side by side, so a new model lands in a three-way comparison for free rather than needing its own baseline.",
+    "ROW 3 (z = 1.8, T* = 1.04, rho* = 0.55) IS AN OUTLIER AND SHOULD BE HANDLED SEPARATELY. MC gives U/N = -3.438 while HRT and MHNC give -3.316 and -3.290; MC gives P = 0.103 against 0.154 and 0.140; MC gives mu = -3.851 against -3.474 and -3.500. Both theories agree closely with each other and disagree with MC, and the discrepancy is far larger than at any other state. Note T* = 1.04 with rho* = 0.55 sits near the liquid-vapour boundary for this z (CEP at T* = 0.965), so the MC run may be sampling a near-coexistence state. Do not let this row dominate an RMS score without saying so.",
+    "TABLE 2 IS A COMPILATION, NOT ONE MEASUREMENT. Its rows mix GCMC [11], GCTMMC [12], SCOZA [11], and this paper's own HRT and MHNC. The rho_cep column has literal em-dashes (no value) for every GCTMMC row. Footnote a: the HRT z = 1.8 entries are EXTRAPOLATED, not computed. Footnote b: the MHNC z = 2.4 and 3.0 entries come from extrapolating the intersection of MHNC's Delta_s = 0 locus with somebody else's (GCTMMC) binodal -- a hybrid of two sources, printed with a '~=' sign in the original.",
+    "DEMIXING NEEDS det M = 0, NOT dP/drho. Same caveat as the 1998 paper: the lambda-line is a composition instability at fixed total density. The Delta_s = 0 entropic criterion used here is a THIRD route (neither mechanical nor det M) and is itself only an empirical indicator of the transition."
+  ],
+
+  "thermo": {
+    "description": "Table 1. Symmetric equimolar HCYM, c_1 = c_2 = 0.5, alpha = 0.75. Internal energy per particle, pressure and chemical potential, from MC simulation and from two theories.",
+    "alpha": 0.75,
+    "composition": 0.5,
+    "columns": ["z", "tstar", "rho", "u_mc", "u_mc_err", "u_hrt", "u_mhnc", "p_mc", "p_mc_err", "p_hrt", "p_mhnc", "mu_mc", "mu_mc_err", "mu_hrt", "mu_mhnc"],
+    "units": "u = U/(N*epsilon_11), p = P*sigma^3/epsilon_11, mu = mu/epsilon_11",
+    "data": [
+      [1.8, 1.08, 0.45, -2.680, 0.0019, -2.707, -2.677, 0.146, 0.0030, 0.140, 0.133, -3.429, 0.0031, -3.530, -3.281],
+      [1.8, 1.08, 0.55, -3.278, 0.0042, -3.303, -3.282, 0.249, 0.0003, 0.233, 0.218, -3.469, 0.0020, -3.347, -3.385],
+      [1.8, 1.04, 0.55, -3.438, 0.0032, -3.316, -3.290, 0.103, 0.0045, 0.154, 0.140, -3.851, 0.0060, -3.474, -3.500],
+      [2.4, 0.85, 0.40, -1.817, 0.0020, -1.862, -1.809, 0.139, 0.0004, 0.141, 0.135, -2.402, 0.0017, -2.587, -2.590],
+      [2.4, 0.85, 0.50, -2.248, 0.0023, -2.278, -2.234, 0.191, 0.0012, 0.181, 0.177, -2.508, 0.0021, -2.498, -2.499],
+      [3.0, 0.75, 0.40, -1.491, 0.0011, -1.542, -1.479, 0.170, 0.0010, 0.168, 0.166, -1.873, 0.0016, -2.045, -2.035],
+      [3.0, 0.75, 0.50, -1.846, 0.0033, -1.892, -1.833, 0.234, 0.0019, 0.222, 0.223, -1.929, 0.0016, -1.927, -1.909]
+    ],
+    "coverage": "0.40 <= rho* <= 0.55, 0.75 <= T* <= 1.08, 1.8 <= z <= 3.0, alpha = 0.75, equimolar only."
+  },
+
+  "cep": {
+    "description": "Table 2. Critical end point (crossover from liquid-vapour to liquid-liquid coexistence) at alpha = 0.75, compiled across sources. rho_cep = null means the source reported no density.",
+    "alpha": 0.75,
+    "columns": ["z", "rho_cep", "tstar_cep", "source", "qualifier"],
+    "data": [
+      [1.8, 0.617, 0.965, "GCMC [11]", null],
+      [1.8, null,  0.97,  "GCTMMC [12]", null],
+      [1.8, 0.59,  0.97,  "SCOZA [11]", null],
+      [1.8, 0.63,  0.94,  "HRT (this work)", "extrapolated (footnote a)"],
+      [1.8, 0.62,  0.96,  "MHNC (this work)", null],
+      [2.4, null,  0.73,  "GCTMMC [12]", null],
+      [2.4, 0.67,  0.72,  "HRT (this work)", null],
+      [2.4, 0.58,  0.755, "MHNC (this work)", "approximate, hybrid: MHNC Delta_s=0 locus x GCTMMC binodal (footnote b)"],
+      [3.0, null,  0.61,  "GCTMMC [12]", null],
+      [3.0, 0.71,  0.61,  "HRT (this work)", null],
+      [3.0, 0.57,  0.63,  "MHNC (this work)", "approximate, hybrid: MHNC Delta_s=0 locus x GCTMMC binodal (footnote b)"]
+    ],
+    "trend": "Increasing z (shorter-ranged attraction) SHIFTS T_cep DOWN STRONGLY (0.965 -> 0.73 -> 0.61 in the simulation column) while leaving rho_cep only mildly affected. The two theories disagree on the SIGN of the rho_cep trend: HRT predicts rho_cep rising with z (0.63 -> 0.67 -> 0.71), MHNC predicts it falling (0.62 -> 0.58 -> 0.57). The paper flags this as unresolved for want of simulation data on rho_cep above z = 1.8 -- which makes it an open question a new theory can speak to.",
+    "reference_11": "GCMC and SCOZA values, alpha = 0.75, z = 1.8 -- source paper not in hand.",
+    "reference_12": "GCTMMC binodals at z = 1.8, 2.4, 3.0 -- source paper not in hand; would supply the LV binodal curves that Table 2 only summarises through the CEP."
+  },
+
+  "phase_diagram_type": {
+    "note": "The paper's headline claim is a van Konynenburg-Scott TYPE classification result: an earlier HRT study of symmetric HCYM failed to find the type-I scenario expected at relatively large alpha and suggested type II persisted even as alpha -> 1; this work shows type I is in fact there. Relevant if the paper's mixture section wants to say what TOPOLOGY a first-order theory produces, as distinct from how accurately it places any one line.",
+    "type_I": "lambda-line meets the LV binodal at a critical end point; below it, LL coexistence.",
+    "citation_for_classification": "P. H. van Konynenburg and R. L. Scott, Philos. Trans. R. Soc. London A 298, 495 (1980)"
+  }
+}

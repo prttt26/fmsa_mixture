@@ -1,0 +1,65 @@
+{
+  "_source": "J. J. Potoff and A. Z. Panagiotopoulos, J. Chem. Phys. 109, 10914 (1998), doi:10.1063/1.477787 (primary); J. Perez-Pellitero, P. Ungerer, G. Orkoulas, A. D. Mackie, J. Chem. Phys. 125, 054515 (2006), doi:10.1063/1.2227027 (independent confirmation, Table II)",
+  "_system": "binary Lennard-Jones, sigma_1 = sigma_2 = 1.0, eps_1 = 1.0, eps_2 = 0.5, Lorentz-Berthelot cross terms",
+  "_units": "T* = kT/eps_11, rho* = N sigma_11^3/V, p* = p sigma_11^3/eps_11, x1 = mole fraction of component 1 (the eps=1, i.e. STRONGER, species) — same convention as critical_line_s2lj.py",
+  "_extracted": "2026-07-28, from pdf/sources_paywall/. P&P values are the paper's own summary in Sec. V (p. 10920); the 2006 values are its Table II.",
+
+  "pure": {
+    "status": "HAVE",
+    "Tc": 1.3120, "Tc_err": 0.0007,
+    "rhoc": 0.316, "rhoc_err": 0.001,
+    "pc": 0.1279, "pc_err": 0.0006,
+    "_confirmation_2006": {"Tc": 1.3123, "Tc_err": 0.0006, "rhoc": 0.3174, "rhoc_err": 0.0006},
+    "_note": "untruncated LJ with long-range corrections (Theodorou-Suter)"
+  },
+
+  "mixture_critical_point_at_T1": {
+    "status": "HAVE",
+    "T": 1.0,
+    "x1_c": 0.459, "x1_c_err": 0.003,
+    "rhoc": 0.406, "rhoc_err": 0.002,
+    "pc": 0.1522, "pc_err": 0.0009,
+    "_method": "mixed-field finite-size scaling, extrapolated to L=inf (V = 216 ... 1728)",
+    "_independent_estimates": [
+      {"source": "P&P 1998 mixed-field",            "pc": 0.1522, "pc_err": 0.0009, "rhoc": 0.406, "rhoc_err": 0.002, "x1c": 0.459, "x1c_err": 0.003},
+      {"source": "PP2006 mixed-field + FSS",        "pc": 0.15,   "pc_err": 0.01,   "rhoc": 0.401, "rhoc_err": 0.003, "x1c": 0.458, "x1c_err": 0.002},
+      {"source": "PP2006 cumulant + FSS",           "pc": 0.1512, "pc_err": 0.0009, "rhoc": 0.399, "rhoc_err": 0.004, "x1c": 0.458, "x1c_err": 0.002},
+      {"source": "PP2006 cumulant intersection",    "pc": 0.151,  "pc_err": 0.001,  "rhoc": 0.39,  "rhoc_err": 0.01,  "x1c": 0.49,  "x1c_err": 0.01}
+    ],
+    "_spread": "Across the four estimates: x1_c 0.458-0.49, rho*_c 0.39-0.406, p*_c 0.151-0.1522. The first three agree closely; the cumulant-intersection row is the outlier the 2006 authors themselves flag as least accurate for the mixture."
+  },
+
+  "coexistence_table_I": {
+    "status": "HAVE",
+    "_source": "P&P 1998 Table I, p. 10920 — 'Selected phase coexistence data'. Parentheses = uncertainty in the last digit.",
+    "_columns": ["p*", "x1_liquid", "y1_vapour", "rho*_liq", "rho*_gas"],
+    "T0.90": [
+      [0.0136, 0.995,  0.9115, 0.74,  0.0162],
+      [0.0154, 0.9902, 0.8108, 0.74,  0.0184],
+      [0.0198, 0.977,  0.6404, 0.74,  0.0240],
+      [0.03130, 0.943, 0.424,  0.739, 0.0399],
+      [0.0618, 0.836,  0.259,  0.711, 0.0852]
+    ],
+    "T1.00": [
+      [0.0284,  0.9926, 0.9107, 0.699, 0.0330],
+      [0.0319,  0.9835, 0.822,  0.697, 0.0374],
+      [0.0399,  0.9628, 0.675,  0.691, 0.0480],
+      [0.05927, 0.910,  0.500,  0.674, 0.0749],
+      [0.1064,  0.752,  0.373,  0.610, 0.1623]
+    ],
+    "T1.10": [
+      [0.0521,  0.988, 0.910, 0.63,  0.059],
+      [0.0582,  0.973, 0.828, 0.63,  0.0659],
+      [0.07166, 0.942, 0.691, 0.626, 0.084],
+      [0.1021,  0.852, 0.571, 0.57,  0.138]
+    ],
+    "_note": "Vapour-liquid coexistence, not spinodal. Comparing against it needs a phase-equilibrium solve (equal mu_i and p between phases), which the current spinodal/critical machinery does not do."
+  },
+
+  "mixture_critical_line": {
+    "status": "PARTIAL",
+    "_note": "Neither paper tabulates T_c versus composition. P&P give the single critical point at T*=1.0; the 2006 paper's Fig. 6 shows p-x-y diagrams at T*=0.86, 1.00 and 1.14 with the critical point marked on each, so three points of the critical line could be digitised from that figure if needed.",
+    "_columns": ["x1", "Tc", "rhoc", "pc"],
+    "rows": []
+  }
+}

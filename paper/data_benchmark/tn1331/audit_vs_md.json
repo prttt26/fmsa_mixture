@@ -1,0 +1,2595 @@
+[
+  {
+    "state": "T1_eps0.50_x0.0995",
+    "table": "rdf/T1_eps0.50_x0.0995.csv",
+    "n_points": 63,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 6,
+        "mean_abs": 0.07091658730158742,
+        "mean_abs_clean": 0.03680131578947381,
+        "max_abs": 0.47512,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0058695833333333326,
+        "mean_abs_clean": 0.0058695833333333326,
+        "max_abs": 0.032049999999999024,
+        "n_corrupt": 0,
+        "n_flagged": 27,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 27,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.001975634920634913,
+        "mean_abs_clean": 0.001975634920634913,
+        "max_abs": 0.011869999999999936,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T1_eps0.50_x0.5000",
+    "table": "rdf/T1_eps0.50_x0.5000.csv",
+    "n_points": 65,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.04668876923076914,
+        "mean_abs_clean": 0.04668876923076914,
+        "max_abs": 0.13321749999999932,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.006796076923076963,
+        "mean_abs_clean": 0.006796076923076963,
+        "max_abs": 0.028489999999999238,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.004203076923076923,
+        "mean_abs_clean": 0.004203076923076923,
+        "max_abs": 0.015835000000000043,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T1_eps0.50_x0.7500",
+    "table": "rdf/T1_eps0.50_x0.7500.csv",
+    "n_points": 65,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.057595923076923065,
+        "mean_abs_clean": 0.057595923076923065,
+        "max_abs": 0.16422000000000025,
+        "n_corrupt": 0,
+        "n_flagged": 1,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 1,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.01927601923076925,
+        "mean_abs_clean": 0.01927601923076925,
+        "max_abs": 0.0776675,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.012155692307692298,
+        "mean_abs_clean": 0.012155692307692298,
+        "max_abs": 0.06019999999999959,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T1_eps0.50_x0.9005",
+    "table": "rdf/T1_eps0.50_x0.9005.csv",
+    "n_points": 65,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 5,
+        "mean_abs": 0.11981006516696147,
+        "mean_abs_clean": 0.0828520752221005,
+        "max_abs": 0.7492053939393917,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 9,
+        "n_other": 10,
+        "mean_abs": 38.8636781781953,
+        "mean_abs_clean": 0.09268365480526755,
+        "max_abs": 401.9267925301205,
+        "n_corrupt": 3,
+        "n_flagged": 14,
+        "n_flag_and_corrupt": 1,
+        "n_corrupt_unflagged": 2,
+        "n_flag_not_corrupt": 13,
+        "corrupt_R": [
+          1.075,
+          1.1,
+          2.275
+        ],
+        "corrupt_shift": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "r_range": [
+          1.075,
+          2.275
+        ]
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 7,
+        "mean_abs": 0.23687949925576432,
+        "mean_abs_clean": 0.09368812270398201,
+        "max_abs": 2.228896204819276,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T1_eps1.00_x0.0995",
+    "table": "rdf/T1_eps1.00_x0.0995.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 12,
+        "mean_abs": 0.17831000000000008,
+        "mean_abs_clean": 0.08625138888888888,
+        "max_abs": 0.8044125000000011,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.007142178030302925,
+        "mean_abs_clean": 0.007142178030302925,
+        "max_abs": 0.03467000000000109,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.005027803030303043,
+        "mean_abs_clean": 0.005027803030303043,
+        "max_abs": 0.030240000000000045,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T1_eps1.00_x0.1001",
+    "table": "rdf/T1_eps1.00_x0.1001.csv",
+    "n_points": 65,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 6,
+        "mean_abs": 0.267714846153846,
+        "mean_abs_clean": 0.08642031249999997,
+        "max_abs": 0.99984,
+        "n_corrupt": 11,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 2,
+        "n_corrupt_unflagged": 9,
+        "n_flag_not_corrupt": 2,
+        "corrupt_R": [
+          1.025,
+          1.05,
+          1.075,
+          1.3,
+          1.325,
+          1.35,
+          1.4,
+          1.425,
+          1.45,
+          1.475,
+          1.5
+        ],
+        "corrupt_shift": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "r_range": [
+          1.025,
+          1.5
+        ]
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 11,
+        "mean_abs": 0.1983723846153845,
+        "mean_abs_clean": 0.09756657407407399,
+        "max_abs": 0.7855899999999998,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 8,
+        "mean_abs": 0.20666323076923077,
+        "mean_abs_clean": 0.13465777777777782,
+        "max_abs": 1.084490000000002,
+        "n_corrupt": 3,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 3,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [
+          0.975,
+          1.0,
+          1.025
+        ],
+        "corrupt_shift": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "r_range": [
+          0.975,
+          1.025
+        ]
+      }
+    }
+  },
+  {
+    "state": "T1_eps1.00_x0.2500",
+    "table": "rdf/T1_eps1.00_x0.2500.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 13,
+        "mean_abs": 0.30822193181818164,
+        "mean_abs_clean": 0.1514633163265306,
+        "max_abs": 2.04985,
+        "n_corrupt": 4,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 4,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [
+          0.975,
+          1.025,
+          1.05,
+          1.125
+        ],
+        "corrupt_shift": [
+          1.0,
+          2.0,
+          2.0,
+          1.0
+        ],
+        "r_range": [
+          0.975,
+          1.125
+        ]
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 20,
+        "mean_abs": 0.31841367424242417,
+        "mean_abs_clean": 0.14474940217391308,
+        "max_abs": 1.84813,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 26,
+        "mean_abs": 0.4275049999999999,
+        "mean_abs_clean": 0.1306852857142857,
+        "max_abs": 2.84286,
+        "n_corrupt": 5,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 5,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [
+          0.95,
+          1.125,
+          1.15,
+          1.175,
+          1.2
+        ],
+        "corrupt_shift": [
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "r_range": [
+          0.95,
+          1.2
+        ]
+      }
+    }
+  },
+  {
+    "state": "T1_eps1.00_x0.7500",
+    "table": "rdf/T1_eps1.00_x0.7500.csv",
+    "n_points": 67,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.014710485074626783,
+        "mean_abs_clean": 0.014710485074626783,
+        "max_abs": 0.03868999999999989,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.006763264925373156,
+        "mean_abs_clean": 0.006763264925373156,
+        "max_abs": 0.02774499999999991,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.006890373134328363,
+        "mean_abs_clean": 0.006890373134328363,
+        "max_abs": 0.025730000000000253,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T1_eps1.00_x0.9005",
+    "table": "rdf/T1_eps1.00_x0.9005.csv",
+    "n_points": 65,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.010171591936339434,
+        "mean_abs_clean": 0.010171591936339434,
+        "max_abs": 0.026430742857141976,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.013718066883920705,
+        "mean_abs_clean": 0.013718066883920705,
+        "max_abs": 0.040576285714286175,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.02052119667045592,
+        "mean_abs_clean": 0.02052119667045592,
+        "max_abs": 0.10323834285714284,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T1_eps1.00_x0.9502",
+    "table": "rdf/T1_eps1.00_x0.9502.csv",
+    "n_points": 64,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.00480432907196961,
+        "mean_abs_clean": 0.00480432907196961,
+        "max_abs": 0.020807926829268464,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.013285115911400655,
+        "mean_abs_clean": 0.013285115911400655,
+        "max_abs": 0.044835609756096684,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.04895816334649849,
+        "mean_abs_clean": 0.04895816334649849,
+        "max_abs": 0.19153218181818077,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T1_eps1.50_x0.0498",
+    "table": "rdf/T1_eps1.50_x0.0498.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 8,
+        "mean_abs": 0.17496246212121222,
+        "mean_abs_clean": 0.13183568965517242,
+        "max_abs": 0.5998399999999999,
+        "n_corrupt": 0,
+        "n_flagged": 2,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 2,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 9,
+        "mean_abs": 0.16624960227272723,
+        "mean_abs_clean": 0.13007052631578947,
+        "max_abs": 0.4991799999999982,
+        "n_corrupt": 0,
+        "n_flagged": 2,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 2,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 23,
+        "mean_abs": 0.24794295454545456,
+        "mean_abs_clean": 0.13225581395348837,
+        "max_abs": 0.7613399999999997,
+        "n_corrupt": 0,
+        "n_flagged": 1,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 1,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T1_eps1.50_x0.0995",
+    "table": "rdf/T1_eps1.50_x0.0995.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 1,
+        "mean_abs": 0.05714700757575747,
+        "mean_abs_clean": 0.053283346153846056,
+        "max_abs": 0.3082849999999997,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.00569496212121217,
+        "mean_abs_clean": 0.00569496212121217,
+        "max_abs": 0.026346250000004012,
+        "n_corrupt": 0,
+        "n_flagged": 6,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 6,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0024686363636363356,
+        "mean_abs_clean": 0.0024686363636363356,
+        "max_abs": 0.017919999999999936,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps0.50_x0.0498",
+    "table": "rdf/T2_eps0.50_x0.0498.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.031576136363636334,
+        "mean_abs_clean": 0.031576136363636334,
+        "max_abs": 0.11223000000000027,
+        "n_corrupt": 0,
+        "n_flagged": 2,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 2,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.003396117424242374,
+        "mean_abs_clean": 0.003396117424242374,
+        "max_abs": 0.009909999999999863,
+        "n_corrupt": 0,
+        "n_flagged": 2,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 2,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0008931060606060387,
+        "mean_abs_clean": 0.0008931060606060387,
+        "max_abs": 0.006200000000000011,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps0.50_x0.2500",
+    "table": "rdf/T2_eps0.50_x0.2500.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.017670606060606085,
+        "mean_abs_clean": 0.017670606060606085,
+        "max_abs": 0.0846775000000013,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0020867234848484964,
+        "mean_abs_clean": 0.0020867234848484964,
+        "max_abs": 0.0062675000000003145,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.001525530303030294,
+        "mean_abs_clean": 0.001525530303030294,
+        "max_abs": 0.00766,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps0.50_x0.9502",
+    "table": "rdf/T2_eps0.50_x0.9502.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.005563030303030292,
+        "mean_abs_clean": 0.005563030303030292,
+        "max_abs": 0.012440000000000007,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0032293939393939603,
+        "mean_abs_clean": 0.0032293939393939603,
+        "max_abs": 0.009707499999999758,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.024324469696969695,
+        "mean_abs_clean": 0.024324469696969695,
+        "max_abs": 0.050904999999999756,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps1.00_x0.0995",
+    "table": "rdf/T2_eps1.00_x0.0995.csv",
+    "n_points": 67,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.028291641791044764,
+        "mean_abs_clean": 0.028291641791044764,
+        "max_abs": 0.13224999999999998,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.01621981343283584,
+        "mean_abs_clean": 0.01621981343283584,
+        "max_abs": 0.06674250000000126,
+        "n_corrupt": 0,
+        "n_flagged": 2,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 2,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.021841716417910433,
+        "mean_abs_clean": 0.021841716417910433,
+        "max_abs": 0.08941999999999917,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps1.00_x0.1001",
+    "table": "rdf/T2_eps1.00_x0.1001.csv",
+    "n_points": 67,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.015825410447761198,
+        "mean_abs_clean": 0.015825410447761198,
+        "max_abs": 0.07237999999999989,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0032563619402984256,
+        "mean_abs_clean": 0.0032563619402984256,
+        "max_abs": 0.01701999999999959,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0010869402985074822,
+        "mean_abs_clean": 0.0010869402985074822,
+        "max_abs": 0.009090000000000042,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps1.00_x0.2500",
+    "table": "rdf/T2_eps1.00_x0.2500.csv",
+    "n_points": 65,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.02189449999999996,
+        "mean_abs_clean": 0.02189449999999996,
+        "max_abs": 0.10212749999999948,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0025910384615384628,
+        "mean_abs_clean": 0.0025910384615384628,
+        "max_abs": 0.006009999999999849,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0014881538461538788,
+        "mean_abs_clean": 0.0014881538461538788,
+        "max_abs": 0.008740000000000026,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps1.00_x0.9502",
+    "table": "rdf/T2_eps1.00_x0.9502.csv",
+    "n_points": 63,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.004822063492063462,
+        "mean_abs_clean": 0.004822063492063462,
+        "max_abs": 0.012240000000000029,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.003537519841269884,
+        "mean_abs_clean": 0.003537519841269884,
+        "max_abs": 0.011261250000000222,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.008778492063492096,
+        "mean_abs_clean": 0.008778492063492096,
+        "max_abs": 0.03513000000000055,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps1.50_x0.5000",
+    "table": "rdf/T2_eps1.50_x0.5000.csv",
+    "n_points": 64,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.004098203125000004,
+        "mean_abs_clean": 0.004098203125000004,
+        "max_abs": 0.014702500000000285,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0025198437499999553,
+        "mean_abs_clean": 0.0025198437499999553,
+        "max_abs": 0.011149999999999327,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0024546874999999595,
+        "mean_abs_clean": 0.0024546874999999595,
+        "max_abs": 0.009109999999999951,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps1.50_x0.7500",
+    "table": "rdf/T2_eps1.50_x0.7500.csv",
+    "n_points": 65,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.006255153846153825,
+        "mean_abs_clean": 0.006255153846153825,
+        "max_abs": 0.01297249999999961,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.003097942307692367,
+        "mean_abs_clean": 0.003097942307692367,
+        "max_abs": 0.009198750000000366,
+        "n_corrupt": 0,
+        "n_flagged": 6,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 6,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0042249230769230775,
+        "mean_abs_clean": 0.0042249230769230775,
+        "max_abs": 0.011660000000000004,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps1.50_x0.9001",
+    "table": "rdf/T2_eps1.50_x0.9001.csv",
+    "n_points": 65,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0033219615384615167,
+        "mean_abs_clean": 0.0033219615384615167,
+        "max_abs": 0.008445000000000001,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.002646615384615429,
+        "mean_abs_clean": 0.002646615384615429,
+        "max_abs": 0.008127499999999621,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.006143692307692332,
+        "mean_abs_clean": 0.006143692307692332,
+        "max_abs": 0.030964999999999687,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps1.50_x0.9502",
+    "table": "rdf/T2_eps1.50_x0.9502.csv",
+    "n_points": 63,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0038308730158730024,
+        "mean_abs_clean": 0.0038308730158730024,
+        "max_abs": 0.012490000000000112,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.004023650793650804,
+        "mean_abs_clean": 0.004023650793650804,
+        "max_abs": 0.007615000000000149,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.021478492063492047,
+        "mean_abs_clean": 0.021478492063492047,
+        "max_abs": 0.06284499999999982,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps2.00_x0.0498",
+    "table": "rdf/T2_eps2.00_x0.0498.csv",
+    "n_points": 63,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.04597468253968259,
+        "mean_abs_clean": 0.03245338709677425,
+        "max_abs": 0.8842950000000002,
+        "n_corrupt": 1,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 1,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [
+          1.325
+        ],
+        "corrupt_shift": [
+          1.0
+        ],
+        "r_range": [
+          1.325,
+          1.325
+        ]
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0030338293650794194,
+        "mean_abs_clean": 0.0030338293650794194,
+        "max_abs": 0.01281500000000002,
+        "n_corrupt": 0,
+        "n_flagged": 2,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 2,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.002814365079365038,
+        "mean_abs_clean": 0.002814365079365038,
+        "max_abs": 0.015029999999999988,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps2.00_x0.0999",
+    "table": "rdf/T2_eps2.00_x0.0999.csv",
+    "n_points": 67,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.029018320895522344,
+        "mean_abs_clean": 0.029018320895522344,
+        "max_abs": 0.10346499999999992,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.002260111940298538,
+        "mean_abs_clean": 0.002260111940298538,
+        "max_abs": 0.010471249999999266,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.002285820895522375,
+        "mean_abs_clean": 0.002285820895522375,
+        "max_abs": 0.014060000000000072,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps2.00_x0.1001",
+    "table": "rdf/T2_eps2.00_x0.1001.csv",
+    "n_points": 61,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.01577627049180327,
+        "mean_abs_clean": 0.01577627049180327,
+        "max_abs": 0.07072999999999996,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0019220696721311467,
+        "mean_abs_clean": 0.0019220696721311467,
+        "max_abs": 0.008921250000000214,
+        "n_corrupt": 0,
+        "n_flagged": 2,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 2,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0018020491803278599,
+        "mean_abs_clean": 0.0018020491803278599,
+        "max_abs": 0.012660000000000005,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T2_eps2.00_x0.2500",
+    "table": "rdf/T2_eps2.00_x0.2500.csv",
+    "n_points": 67,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.011468283582089518,
+        "mean_abs_clean": 0.011468283582089518,
+        "max_abs": 0.04329499999999986,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.002025429104477668,
+        "mean_abs_clean": 0.002025429104477668,
+        "max_abs": 0.011679999999999247,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.001959552238805988,
+        "mean_abs_clean": 0.001959552238805988,
+        "max_abs": 0.011920000000000375,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps0.50_x0.0498",
+    "table": "rdf/T3_eps0.50_x0.0498.csv",
+    "n_points": 65,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.04726242307692307,
+        "mean_abs_clean": 0.04726242307692307,
+        "max_abs": 0.20930500000000007,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.004109769230769227,
+        "mean_abs_clean": 0.004109769230769227,
+        "max_abs": 0.018295000000000172,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0012794615384615312,
+        "mean_abs_clean": 0.0012794615384615312,
+        "max_abs": 0.007704999999999851,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps0.50_x0.0999",
+    "table": "rdf/T3_eps0.50_x0.0999.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.04401962121212122,
+        "mean_abs_clean": 0.04401962121212122,
+        "max_abs": 0.16014499999999976,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.004285568181818248,
+        "mean_abs_clean": 0.004285568181818248,
+        "max_abs": 0.01822999999999997,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0011723484848484872,
+        "mean_abs_clean": 0.0011723484848484872,
+        "max_abs": 0.006259999999999988,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps0.50_x0.2500",
+    "table": "rdf/T3_eps0.50_x0.2500.csv",
+    "n_points": 65,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0728583846153846,
+        "mean_abs_clean": 0.0728583846153846,
+        "max_abs": 0.258,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 5,
+        "mean_abs": 0.13106199999999998,
+        "mean_abs_clean": 0.04189033333333334,
+        "max_abs": 1.2206999999999997,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.05692192307692309,
+        "mean_abs_clean": 0.05692192307692309,
+        "max_abs": 0.26783,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps0.50_x0.7500",
+    "table": "rdf/T3_eps0.50_x0.7500.csv",
+    "n_points": 64,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.005846640624999969,
+        "mean_abs_clean": 0.005846640624999969,
+        "max_abs": 0.022869999999999946,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.002433632812499988,
+        "mean_abs_clean": 0.002433632812499988,
+        "max_abs": 0.009509999999998242,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.003766953124999999,
+        "mean_abs_clean": 0.003766953124999999,
+        "max_abs": 0.010460000000000136,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps1.00_x0.2500",
+    "table": "rdf/T3_eps1.00_x0.2500.csv",
+    "n_points": 67,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.011574925373134334,
+        "mean_abs_clean": 0.011574925373134334,
+        "max_abs": 0.0426025000000001,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.002402070895522355,
+        "mean_abs_clean": 0.002402070895522355,
+        "max_abs": 0.007183750000000044,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0018067164179104709,
+        "mean_abs_clean": 0.0018067164179104709,
+        "max_abs": 0.005739999999999856,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps1.00_x0.5000",
+    "table": "rdf/T3_eps1.00_x0.5000.csv",
+    "n_points": 67,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.011492873134328346,
+        "mean_abs_clean": 0.011492873134328346,
+        "max_abs": 0.03819249999999985,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.002050447761194055,
+        "mean_abs_clean": 0.002050447761194055,
+        "max_abs": 0.011454999999999993,
+        "n_corrupt": 0,
+        "n_flagged": 2,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 2,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0019411194029850694,
+        "mean_abs_clean": 0.0019411194029850694,
+        "max_abs": 0.005400000000000071,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps1.00_x0.7500",
+    "table": "rdf/T3_eps1.00_x0.7500.csv",
+    "n_points": 64,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.009520468750000007,
+        "mean_abs_clean": 0.009520468750000007,
+        "max_abs": 0.026527500000000037,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.003744980468750019,
+        "mean_abs_clean": 0.003744980468750019,
+        "max_abs": 0.013864999999999794,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0035819531250000157,
+        "mean_abs_clean": 0.0035819531250000157,
+        "max_abs": 0.013155000000000028,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps1.00_x0.9001",
+    "table": "rdf/T3_eps1.00_x0.9001.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0033680303030303154,
+        "mean_abs_clean": 0.0033680303030303154,
+        "max_abs": 0.014520000000000088,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0034323106060606358,
+        "mean_abs_clean": 0.0034323106060606358,
+        "max_abs": 0.013051250000000625,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.00817780303030303,
+        "mean_abs_clean": 0.00817780303030303,
+        "max_abs": 0.029730000000000034,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps1.00_x0.9502",
+    "table": "rdf/T3_eps1.00_x0.9502.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0032681060606060586,
+        "mean_abs_clean": 0.0032681060606060586,
+        "max_abs": 0.009190000000000031,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0028345075757576317,
+        "mean_abs_clean": 0.0028345075757576317,
+        "max_abs": 0.007171249999999851,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.010542424242424256,
+        "mean_abs_clean": 0.010542424242424256,
+        "max_abs": 0.037349999999999994,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps1.50_x0.9001",
+    "table": "rdf/T3_eps1.50_x0.9001.csv",
+    "n_points": 67,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0026735447761193957,
+        "mean_abs_clean": 0.0026735447761193957,
+        "max_abs": 0.00827,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.004633283582089503,
+        "mean_abs_clean": 0.004633283582089503,
+        "max_abs": 0.012856249999999791,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.006479402985074634,
+        "mean_abs_clean": 0.006479402985074634,
+        "max_abs": 0.02359,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps1.50_x0.9502",
+    "table": "rdf/T3_eps1.50_x0.9502.csv",
+    "n_points": 64,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.004019804687499985,
+        "mean_abs_clean": 0.004019804687499985,
+        "max_abs": 0.011310000000000153,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.005689296874999987,
+        "mean_abs_clean": 0.005689296874999987,
+        "max_abs": 0.012146249999999914,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.011245390625,
+        "mean_abs_clean": 0.011245390625,
+        "max_abs": 0.03922000000000003,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps2.00_x0.0995",
+    "table": "rdf/T3_eps2.00_x0.0995.csv",
+    "n_points": 67,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.03187832089552237,
+        "mean_abs_clean": 0.03187832089552237,
+        "max_abs": 0.16910499999999984,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.016559291044776134,
+        "mean_abs_clean": 0.016559291044776134,
+        "max_abs": 0.07162000000000002,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.02022582089552238,
+        "mean_abs_clean": 0.02022582089552238,
+        "max_abs": 0.07932999999999901,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps2.00_x0.2500",
+    "table": "rdf/T3_eps2.00_x0.2500.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.009002159090909095,
+        "mean_abs_clean": 0.009002159090909095,
+        "max_abs": 0.044890000000000096,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0029986742424241825,
+        "mean_abs_clean": 0.0029986742424241825,
+        "max_abs": 0.018566249999999673,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0015072727272727343,
+        "mean_abs_clean": 0.0015072727272727343,
+        "max_abs": 0.007989999999999997,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps2.00_x0.5000",
+    "table": "rdf/T3_eps2.00_x0.5000.csv",
+    "n_points": 67,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.010597313432835806,
+        "mean_abs_clean": 0.010597313432835806,
+        "max_abs": 0.03455750000000002,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.00246104477611947,
+        "mean_abs_clean": 0.00246104477611947,
+        "max_abs": 0.012431250000001004,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0020385820895522117,
+        "mean_abs_clean": 0.0020385820895522117,
+        "max_abs": 0.011230000000000073,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps2.00_x0.7500",
+    "table": "rdf/T3_eps2.00_x0.7500.csv",
+    "n_points": 67,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.003957761194029831,
+        "mean_abs_clean": 0.003957761194029831,
+        "max_abs": 0.01480999999999999,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 2,
+        "n_other": 0,
+        "mean_abs": 3.43485796641791,
+        "mean_abs_clean": 0.0024961153846153705,
+        "max_abs": 118.98649,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0031864925373134368,
+        "mean_abs_clean": 0.0031864925373134368,
+        "max_abs": 0.010640000000000649,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps3.00_x0.0498",
+    "table": "rdf/T3_eps3.00_x0.0498.csv",
+    "n_points": 64,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.10101472656249993,
+        "mean_abs_clean": 0.03294104166666663,
+        "max_abs": 1.1401999999999994,
+        "n_corrupt": 4,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 2,
+        "n_corrupt_unflagged": 2,
+        "n_flag_not_corrupt": 2,
+        "corrupt_R": [
+          1.15,
+          1.175,
+          1.2,
+          1.3
+        ],
+        "corrupt_shift": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "r_range": [
+          1.15,
+          1.3
+        ]
+      },
+      "12": {
+        "n_catastrophic": 15,
+        "n_other": 0,
+        "mean_abs": 275.16207080078124,
+        "mean_abs_clean": 0.002884030612244894,
+        "max_abs": 1739.82642875,
+        "n_corrupt": 0,
+        "n_flagged": 14,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 14,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0016674999999999433,
+        "mean_abs_clean": 0.0016674999999999433,
+        "max_abs": 0.008639999999999981,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps3.00_x0.0995",
+    "table": "rdf/T3_eps3.00_x0.0995.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 5,
+        "mean_abs": 0.08649106060606059,
+        "mean_abs_clean": 0.06497704918032783,
+        "max_abs": 0.3743999999999996,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 5,
+        "mean_abs": 0.1047966098484848,
+        "mean_abs_clean": 0.08191678278688523,
+        "max_abs": 0.42893499999999873,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 5,
+        "mean_abs": 0.13633931818181816,
+        "mean_abs_clean": 0.10544565573770487,
+        "max_abs": 0.6443499999999998,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps3.00_x0.1001",
+    "table": "rdf/T3_eps3.00_x0.1001.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.07087795454545456,
+        "mean_abs_clean": 0.07087795454545456,
+        "max_abs": 0.22179000000000015,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 5,
+        "mean_abs": 0.10047922348484847,
+        "mean_abs_clean": 0.07729456967213118,
+        "max_abs": 0.42433999999999994,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 8,
+        "mean_abs": 0.13245757575757577,
+        "mean_abs_clean": 0.0871683620689655,
+        "max_abs": 0.5780949999999994,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps3.00_x0.7500",
+    "table": "rdf/T3_eps3.00_x0.7500.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.0031546212121211985,
+        "mean_abs_clean": 0.0031546212121211985,
+        "max_abs": 0.010164999999999758,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.002136496212121145,
+        "mean_abs_clean": 0.002136496212121145,
+        "max_abs": 0.007069999999999688,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.003281666666666683,
+        "mean_abs_clean": 0.003281666666666683,
+        "max_abs": 0.013970000000000038,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T3_eps3.00_x0.9005",
+    "table": "rdf/T3_eps3.00_x0.9005.csv",
+    "n_points": 62,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.014119637096774171,
+        "mean_abs_clean": 0.014119637096774171,
+        "max_abs": 0.0615699999999999,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.014778568548387102,
+        "mean_abs_clean": 0.014778568548387102,
+        "max_abs": 0.0607475000000004,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.029678951612903265,
+        "mean_abs_clean": 0.029678951612903265,
+        "max_abs": 0.07238999999999995,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  },
+  {
+    "state": "T1_eps0.50_x0.2500",
+    "table": "rdf/T1_eps0.50_x0.2500.csv",
+    "n_points": 66,
+    "pairs": {
+      "11": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.04286655303030296,
+        "mean_abs_clean": 0.04286655303030296,
+        "max_abs": 0.22248499999999982,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "12": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.006767670454545516,
+        "mean_abs_clean": 0.006767670454545516,
+        "max_abs": 0.023980000000000334,
+        "n_corrupt": 0,
+        "n_flagged": 4,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 4,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      },
+      "22": {
+        "n_catastrophic": 0,
+        "n_other": 0,
+        "mean_abs": 0.005193636363636334,
+        "mean_abs_clean": 0.005193636363636334,
+        "max_abs": 0.03980000000000006,
+        "n_corrupt": 0,
+        "n_flagged": 0,
+        "n_flag_and_corrupt": 0,
+        "n_corrupt_unflagged": 0,
+        "n_flag_not_corrupt": 0,
+        "corrupt_R": [],
+        "corrupt_shift": [],
+        "r_range": null
+      }
+    }
+  }
+]
