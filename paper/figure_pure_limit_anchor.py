@@ -154,7 +154,7 @@ def main() -> None:
     c_dp2 = dp2.get_c_total(r, hs_ref='fmt')
 
     fig, ax = plt.subplots(figsize=(6.4, 4.4))
-    ax.plot(r, c_pure, color='#222222', lw=2.4, label='FMSA_pure')
+    ax.plot(r, c_pure, color='#222222', lw=2.4, label='Tang 2003')
     ax.plot(r, c_dp1, color='#1f77b4', lw=1.6, ls='--',
             label='DP, $N=1$')
     for (i, j), st in ((( 0, 0), (0, (5, 2))), ((0, 1), (0, (1, 1.6)))):
