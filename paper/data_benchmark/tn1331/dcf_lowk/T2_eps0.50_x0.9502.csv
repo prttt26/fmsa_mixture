@@ -1,7 +1,7 @@
 # c_ij(r) with its long-wavelength part repaired -- dcf_lowk.py, source T2_eps0.50_x0.9502
 # chat_ij(0) from bulk thermodynamics (NOT from this structure):
-#   chat11(0) = -84.0116  chat12(0) = -306.8415  chat22(0) = -1102.8773
-#   d(betaP)/d(rho_i) = 27.0597, 95.9366 from a 71-run LAMMPS pressure surface (degree 4, rms 0.0017)
+#   chat11(0) = -84.0114  chat12(0) = -306.8411  chat22(0) = -1102.8756
+#   d(betaP)/d(rho_i) = 27.0597, 95.9365 from a 73-run LAMMPS pressure surface (degree 4, rms 0.0016)
 #   S_CC(0) = 0.0443
 # exact asymptote c_ij = -beta u_ij imposed outside the keep radius
 #   artifact level nu_ij = 11 0.0088, 12 0.0034, 22 0.0303
