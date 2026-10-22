@@ -81,6 +81,7 @@ script directly gives the composite.
 | low-k repaired DCF reference | `data_benchmark/dcf_lowk.py` |
 | coupling-series radius $R_c$ and fold ratio (SI, Convergence) | `msa_series_radius.py` (`main`, `cmd_fold`) |
 | fold vs. nearest singularity: monodromy, coefficient signs, competing-tail counterexample (SI, Convergence) | `series_radius_fold.py` -> `numerical_notes/results/series_radius_fold.json` |
+| two supporting coexistence pairs at second coupling order (SI, Finite coupling orders, item 4) | `finite_order_two_tangents.py` -> `numerical_notes/results/finite_order_two_tangents.json` |
 
 The finite-order thermodynamics and the formal-verification checks quoted in the
 Supplementary Material live with the Lean development,
