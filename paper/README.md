@@ -79,6 +79,8 @@ script directly gives the composite.
 | construction check, max. relative discrepancy 1.1e-13 (Sec. IV A) | `FMSA_dp_output/scripts/check_dcf_mixture_construction.py` |
 | truncation cost against exact MSA (Sec. IV B) | `probe_truncation_cost_exact.py` |
 | low-k repaired DCF reference | `data_benchmark/dcf_lowk.py` |
+| coupling-series radius $R_c$ and fold ratio (SI, Convergence) | `msa_series_radius.py` (`main`, `cmd_fold`) |
+| fold vs. nearest singularity: monodromy, coefficient signs, competing-tail counterexample (SI, Convergence) | `series_radius_fold.py` -> `numerical_notes/results/series_radius_fold.json` |
 
 The finite-order thermodynamics and the formal-verification checks quoted in the
 Supplementary Material live with the Lean development,
