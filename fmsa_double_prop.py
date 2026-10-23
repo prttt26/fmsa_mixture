@@ -79,6 +79,30 @@ except AttributeError:
 _PX_TOL = 1e-11
 
 
+def _phi12(s, sigma):
+    """(φ₁, φ₂) = ((1 − sσ − e^{−sσ})/s², (1 − sσ + (sσ)²/2 − e^{−sσ})/s³), broadcast over s and σ.
+
+    The closed forms cancel like eps/|sσ|^3 as sσ -> 0 (about 9 digits lost at |sσ| = 2e-3), so
+    |sσ| < 1/2 uses φ₁ = −σ² Σ (−sσ)^m/(m+2)!, φ₂ = σ³ Σ (−sσ)^m/(m+3)! (20 terms: truncation
+    < 0.5^20/23! ~ 4e-29); the closed forms lose at most ~2 digits for |sσ| >= 1/2.
+    Real s gives real output; s = 0 gives the limits −σ²/2, σ³/6.
+    """
+    s = np.asarray(s)
+    zs = s*sigma
+    small = np.abs(zs) < 0.5
+    y = np.where(small, -zs, 0)
+    g1 = np.zeros_like(y)
+    g2 = np.zeros_like(y)
+    for m in range(19, -1, -1):
+        g1 = g1*y+1/math.factorial(m+2)
+        g2 = g2*y+1/math.factorial(m+3)
+    zs_safe = np.where(small, 1.0, zs)
+    s_safe = np.where(small, 1.0, s*np.ones_like(zs))
+    p1 = np.where(small, -sigma**2*g1, (1.0-zs_safe-np.exp(-zs_safe))/s_safe**2)
+    p2 = np.where(small, sigma**3*g2, (1.0-zs_safe+0.5*zs_safe**2-np.exp(-zs_safe))/s_safe**3)
+    return p1, p2
+
+
 def _px_binom(n: int, k: int) -> float:
     return float(math.comb(n, k))
 
@@ -736,9 +760,7 @@ class FMSA_double_prop:
         """
         sigma, rho = self.sigma, self.rho
         lam, Q0, Qpp = self.lambda_ij, self.Q0, self.Qpp
-        p1 = (1.0 - s*sigma - np.exp(-s*sigma)) / s**2
-        zs = s * sigma
-        p2 = (1.0 - zs + 0.5*zs**2 - np.exp(-zs)) / s**3
+        p1, p2 = _phi12(s, sigma)
         sqrt_rr = np.sqrt(rho[:, None] * rho[None, :])
         inner   = p1[:, None] * Q0 + p2[:, None] * Qpp[None, :]
         Qhat    = -sqrt_rr * np.exp(-s * lam) * inner
@@ -754,31 +776,19 @@ class FMSA_double_prop:
         """
         sigma, lam, Q0, Qpp = self.sigma, self.lambda_ij, self.Q0, self.Qpp
         s = float(s)
-        p1 = (1.0 - s*sigma - np.exp(-s*sigma)) / s**2
-        zs = s * sigma
-        p2 = (1.0 - zs + 0.5*zs**2 - np.exp(-zs)) / s**3
+        p1, p2 = _phi12(s, sigma)
         inner = p1[:, None] * Q0 + p2[:, None] * Qpp[None, :]
         return np.exp(-s * lam) * inner
 
     def _build_Qhat_vec(self, s_arr: np.ndarray) -> np.ndarray:
         """Vectorised Q̂₀ over an array of complex s → shape (len(s), N, N).
 
-        Uses the Taylor series of φ₁/φ₂ for |s·σ| < 1e-3 (removable s→0
+        φ₁/φ₂ from _phi12 (Taylor series for |s·σ| < 1/2; removable s→0
         singularity: φ₁ → −σ²/2, φ₂ → σ³/6)."""
         sigma, rho = self.sigma, self.rho
         lam, Q0, Qpp = self.lambda_ij, self.Q0, self.Qpp
         s = s_arr[:, None]                                   # (nk, 1) broadcast on species
-        zs = s * sigma[None, :]
-        small = np.abs(zs) < 1e-3
-        zs_safe = np.where(small, 1.0, zs)                   # avoid 0/0 in the exact branch
-        s_safe  = np.where(small, 1.0, s * np.ones_like(zs))
-        p1 = (1.0 - zs_safe - np.exp(-zs_safe)) / s_safe**2                 # (nk, N)
-        p2 = (1.0 - zs_safe + 0.5*zs_safe**2 - np.exp(-zs_safe)) / s_safe**3
-        sg = sigma[None, :]
-        p1_ser = -sg**2/2.0 + s*sg**3/6.0 - s**2*sg**4/24.0 + s**3*sg**5/120.0
-        p2_ser =  sg**3/6.0 - s*sg**4/24.0 + s**2*sg**5/120.0 - s**3*sg**6/720.0
-        p1 = np.where(small, p1_ser, p1)
-        p2 = np.where(small, p2_ser, p2)
+        p1, p2 = _phi12(s, sigma[None, :])                   # (nk, N)
         sqrt_rr = np.sqrt(rho[:, None] * rho[None, :])                      # (N, N)
         inner = (p1[:, :, None] * Q0[None, :, :]
                  + p2[:, :, None] * Qpp[None, None, :])                     # (nk, N, N)
@@ -1656,12 +1666,7 @@ class FMSA_double_prop:
         s_arr = np.atleast_1d(np.asarray(s, dtype=complex))
         sig, rho, vac = self.sigma, self.rho, self.vac
         s_c = s_arr[:, None]
-        zs = s_c * sig[None, :]
-        small = np.abs(zs) < 1e-3
-        zs_safe = np.where(small, 1.0, zs)
-        s_safe = np.where(small, 1.0, s_c * np.ones_like(zs))
-        phi1 = (1.0 - zs_safe - np.exp(-zs_safe)) / s_safe**2
-        phi1 = np.where(small, -sig[None, :]**2 / 2.0 + s_c * sig[None, :]**3 / 6.0, phi1)
+        phi1, _ = _phi12(s_c, sig[None, :])
 
         detQ = np.linalg.det(self._build_Qhat_vec(s_arr))            # (ns,)
         A = 1.0 + np.pi * self.xi[3] / (2.0 * vac)
