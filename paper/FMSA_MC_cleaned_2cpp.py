@@ -348,22 +348,19 @@ class FMSA_poly_term_species:
         self.rhostar = rhostar
         self.tstar = tstar
         self.rho = rho = x * rhostar
-        # WARNING -- these coefficients are BIASED, and knowingly kept.
-        # The form is d/sigma = 2^(1/6)/(1+sqrt(1+c0 T*+c1 T*^2+c2 T*^4))^(1/6), which
-        # inverts to the statement beta*u(d) = c0 + c1 T* + c2 T*^3.  At the TRUE
-        # Barker-Henderson diameter that quantity tends to 1 as T*->0 (near contact
-        # u ~ -24 eps (r-sigma)/sigma, so d/sigma -> 1 - T*/24) and falls monotonically
-        # from there, so 1 is its supremum -- c0 = 1.1287 is above it and cannot come
-        # from fitting this quantity over any range.  Measured against the integral:
-        # -0.32% at T* = 0.5, -0.90% at 2.12, -3.72% at 10, always low.  It is not a
-        # different DEFINITION either (integrating to r_min, to infinity, or over the
-        # WCA split is 3-200% off).  Inherited from the original MATLAB (FMSA_MC.m,
-        # "empirical fit coefficients", no citation).
-        # LEFT ALONE ON PURPOSE: this project studies hard-core Yukawa systems, where
-        # input_type='bh' is used and this LJ mapping never runs.  The C++ port
-        # (cpp/FMSA_model) does run it, and uses Cotterman, Schwarz & Prausnitz,
-        # AIChE J 32, 1787 (1986), d/sigma = (1+0.2977 T*)/(1+0.33163 T*+0.0010477 T*^2),
-        # which is within +-0.12% of the integral over T* in [0.5, 10].
+        # WARNING -- the coefficient names below follow the original fit table, c1 = 1.1287,
+        # c2 = -0.05536, c3 = 0.0007278 (array indices 0, 1, 2).  c1 DIVIDES the bracket.
+        # De Souza & Ben-Amotz, Mol. Phys. 78, 137 (1993), as used by Tang & Lu (J. Chem. Phys.
+        # 100, 3079 (1994), Eq. 19; Fluid Phase Equilib. 146, 73 (1998), Eq. 20): the analytic
+        # form of the Barker-Henderson diameter of the LJ potential,
+        #     d = int_0^sigma [1 - exp(-beta u(r))] dr,
+        #     d/sigma = 2^(1/6) / (1 + sqrt(1 + (T* + c2 T*^2 + c3 T*^4)/c1))^(1/6),
+        # T* = kT/eps.  It reproduces the integral to 0.05 % for T* <= 5 (-2.4 % at T* = 10,
+        # beyond the fitted range).  Until 2026-11-11 this file had c1 MULTIPLY T*,
+        # 1 + c1 T* + c2 T*^2 + c3 T*^4, a transcription error inherited from the original MATLAB
+        # (FMSA_MC.m): it put d low by 0.2 % (T* = 0.3) to 1.0 % (T* = 3).  Results produced with
+        # the old form differ slightly (inner-core errors by about 0.01-0.02); the paper's numbers
+        # and figures were recomputed with this formula.
         self.cbh = cbh = np.array([1.1287, -0.05536, 0.0007278], dtype=float)
         # Normalise z and k to lists (length = n_tails_active); None → use defaults.
         # z: float or 1-/2-element list/ndarray; k: same.
@@ -521,7 +518,7 @@ class FMSA_poly_term_species:
         """Barker-Henderson effective diameters from LJ mixing-rule matrices.
 
         d_bh[i,j] = 2^{1/6} · sig_mix[i,j] / (1 + sqrt(f))^{1/6}
-        where f = 1 + cbh[0]/t + cbh[1]/t² + cbh[2]/t⁴,  t = beta·eps_mix[i,j].
+        where f = 1 + (t + cbh[1]t² + cbh[2]t⁴)/cbh[0],  t = 1/(beta·eps_mix[i,j]).
 
         Parameters
         ----------
@@ -535,25 +532,22 @@ class FMSA_poly_term_species:
         d_bh : effective diameter matrix, shape (N, N)
         """
         if cbh is None:
-            # WARNING -- these coefficients are BIASED, and knowingly kept.
-            # The form is d/sigma = 2^(1/6)/(1+sqrt(1+c0 T*+c1 T*^2+c2 T*^4))^(1/6), which
-            # inverts to the statement beta*u(d) = c0 + c1 T* + c2 T*^3.  At the TRUE
-            # Barker-Henderson diameter that quantity tends to 1 as T*->0 (near contact
-            # u ~ -24 eps (r-sigma)/sigma, so d/sigma -> 1 - T*/24) and falls monotonically
-            # from there, so 1 is its supremum -- c0 = 1.1287 is above it and cannot come
-            # from fitting this quantity over any range.  Measured against the integral:
-            # -0.32% at T* = 0.5, -0.90% at 2.12, -3.72% at 10, always low.  It is not a
-            # different DEFINITION either (integrating to r_min, to infinity, or over the
-            # WCA split is 3-200% off).  Inherited from the original MATLAB (FMSA_MC.m,
-            # "empirical fit coefficients", no citation).
-            # LEFT ALONE ON PURPOSE: this project studies hard-core Yukawa systems, where
-            # input_type='bh' is used and this LJ mapping never runs.  The C++ port
-            # (cpp/FMSA_model) does run it, and uses Cotterman, Schwarz & Prausnitz,
-            # AIChE J 32, 1787 (1986), d/sigma = (1+0.2977 T*)/(1+0.33163 T*+0.0010477 T*^2),
-            # which is within +-0.12% of the integral over T* in [0.5, 10].
+            # WARNING -- the coefficient names below follow the original fit table, c1 = 1.1287,
+            # c2 = -0.05536, c3 = 0.0007278 (array indices 0, 1, 2).  c1 DIVIDES the bracket.
+            # De Souza & Ben-Amotz, Mol. Phys. 78, 137 (1993), as used by Tang & Lu (J. Chem. Phys.
+            # 100, 3079 (1994), Eq. 19; Fluid Phase Equilib. 146, 73 (1998), Eq. 20): the analytic
+            # form of the Barker-Henderson diameter of the LJ potential,
+            #     d = int_0^sigma [1 - exp(-beta u(r))] dr,
+            #     d/sigma = 2^(1/6) / (1 + sqrt(1 + (T* + c2 T*^2 + c3 T*^4)/c1))^(1/6),
+            # T* = kT/eps.  It reproduces the integral to 0.05 % for T* <= 5 (-2.4 % at T* = 10,
+            # beyond the fitted range).  Until 2026-11-11 this file had c1 MULTIPLY T*,
+            # 1 + c1 T* + c2 T*^2 + c3 T*^4, a transcription error inherited from the original MATLAB
+            # (FMSA_MC.m): it put d low by 0.2 % (T* = 0.3) to 1.0 % (T* = 3).  Results produced with
+            # the old form differ slightly (inner-core errors by about 0.01-0.02); the paper's numbers
+            # and figures were recomputed with this formula.
             cbh = np.array([1.1287, -0.05536, 0.0007278])
         t   = 1.0 / (beta * eps_mix)
-        fac = 1.0 + cbh[0]*t + cbh[1]*t**2 + cbh[2]*t**4
+        fac = 1.0 + (t + cbh[1]*t**2 + cbh[2]*t**4) / cbh[0]
         return 2.0**(1.0/6.0) * sig_mix / (1.0 + np.sqrt(fac))**(1.0/6.0)
 
     
