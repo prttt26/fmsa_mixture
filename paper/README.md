@@ -87,6 +87,10 @@ The finite-order thermodynamics and the formal-verification checks quoted in the
 Supplementary Material live with the Lean development,
 <https://github.com/prttt26/FMSA_MSY_2YK_LEAN_code> (`scripts/`, `results/`).
 
+The scripts and cached inputs for the numbers added in the revision (uncertainty of the core comparison,
+the HNCB-converged states, the hard-core two-Yukawa pool, the truncation scan, the explicit closed form and
+the coupling scaling) are self-contained in [`revision/`](revision/README.md).
+
 ## Simulation data
 
 `data_benchmark/md/runs/` holds the LAMMPS input, the state parameters, the measured
