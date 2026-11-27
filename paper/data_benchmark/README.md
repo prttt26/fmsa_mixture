@@ -1,4 +1,6 @@
-# `data_benchmark/` — extracted benchmark data and the scripts that make it
+# `data_benchmark/` — extracted benchmark data
+
+The processing scripts are in [`code/structure/benchmark_tools/`](../code/structure/benchmark_tools/). From the repository root run `python code/run.py code/structure/benchmark_tools/convert.py --help`; MD scripts are in its `md/` subdirectory. Data paths below remain relative to this directory.
 
 Machine-readable structure data for binary Lennard-Jones mixtures, for scoring
 FMSA / two-Yukawa mixture models. Provenance and the wider source survey live in
@@ -57,9 +59,9 @@ is the easiest mistake to make with these tables.
 Regenerate with:
 
 ```bash
-python extract_tn1331.py --pdf /path/to/tn1331.pdf --out tn1331
-python extract_literature.py                              # literature_direct tables
-python convert.py --state T1_eps0.50_x0.2500 --from g --to all   # -> converted/
+python code/run.py code/structure/benchmark_tools/extract_tn1331.py --pdf /path/to/tn1331.pdf --out data_benchmark/tn1331
+python code/run.py code/structure/benchmark_tools/extract_literature.py                              # literature_direct tables
+python code/run.py code/structure/benchmark_tools/convert.py --state T1_eps0.50_x0.2500 --from g --to all   # -> converted/
 ```
 
 ## `convert.py` — interconverting structure quantities
@@ -161,8 +163,8 @@ So: **use the inverse direction on our own MD output**, where g_ij can be writte
 out to half the box length — not on the published tables.
 
 ```bash
-python oz_invert.py --state T1_eps0.50_x0.2500 --direction forward --plot fwd.png
-python oz_invert.py --state T1_eps0.50_x0.2500                      # inverse
+python code/run.py code/structure/benchmark_tools/oz_invert.py --state T1_eps0.50_x0.2500 --direction forward --plot fwd.png
+python code/run.py code/structure/benchmark_tools/oz_invert.py --state T1_eps0.50_x0.2500                      # inverse
 ```
 
 ## Bearing on the c22 outer-region question
@@ -208,10 +210,10 @@ thermodynamic `ĉ_ij(0)` at k = 0, an even quartic between, and the exact
 asymptote `c_ij → −βu_ij` outside a per-pair keep radius read off the artifact
 level. Method after Zhao & Wu, *Mol. Phys.* **109**, 2553 (2011).
 
-    python dcf_lowk.py --label validation                # one MD run
-    python dcf_lowk.py --literature T1_eps0.50_x0.2500   # one TN 1331 table
-    python dcf_lowk.py --all                             # 562 states, writes c_lowk.csv
-    python dcf_lowk_figures.py
+    python code/run.py code/structure/benchmark_tools/dcf_lowk.py --label validation                # one MD run
+    python code/run.py code/structure/benchmark_tools/dcf_lowk.py --literature T1_eps0.50_x0.2500   # one TN 1331 table
+    python code/run.py code/structure/benchmark_tools/dcf_lowk.py --all                             # 562 states, writes c_lowk.csv
+    python code/run.py code/structure/benchmark_tools/dcf_lowk_figures.py
 
 At the validation state the raw inversion gives χ_T/χ_id = **−0.025**
 (impossible), the TN 1331 table 0.105, and the anchor 0.0552 — the measured EOS

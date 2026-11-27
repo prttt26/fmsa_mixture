@@ -14,8 +14,8 @@ Every file is one of two tiers, stated in its header comment:
 - **`tabular-exact`** — copied from a numeric table in the paper. Trustworthy to
   the paper's own precision.
 - **`digitized-approx`** — traced from a figure by `../digitize_figure.py`.
-  Accurate to ~1–2% where colour separation is clean; inspect the `*.qa.png`
-  overlay before using.
+  Accurate to ~1–2% where colour separation is clean; check against the source figure
+  before using.
 
 ## Contents
 
@@ -30,7 +30,7 @@ this project's LJ→two-Yukawa mapping (`FMSA_MC.m`: 2.9637 / 14.0167).
 Convention: **species 1 = LARGE** (σ2/σ1 = 0.5), opposite to TN 1331's labelling.
 The most direct published check available for our solver's contact values.
 
-### `rdf/yu_jin_2008_fig13.csv` (+ `.qa.png`) — digitized-approx
+### `rdf/yu_jin_2008_fig13.csv` — digitized-approx
 Yu & Jin Fig. 13, the full `g_ij(r)` curves (g11 solid, g22 dashed, g12 dotted;
 colour-separated). HCTY, size ratio 2, ε ratio 0.5, **T\*=6.0, ρ\*=1.3 (case 2)**
 — a dense, hot, off-target state, kept as a full-curve example. Digitized peaks
@@ -47,7 +47,7 @@ Thermodynamics only — for compressibility / energy cross-checks, not structure
 
 ### `dcf/NOTES.md`, `sk/NOTES.md` — honest negatives
 No paper tabulates full `c_ij(r)` beyond TN 1331, and none tabulates `S_ij(k)` at
-all. Both are produced by converting g or c with `../convert.py`. The NOTES record
+all. Both are produced by converting g or c with `code/structure/benchmark_tools/convert.py`. The NOTES record
 the S(k) definitions each paper uses.
 
 ## Not extracted, and why
@@ -65,6 +65,6 @@ the S(k) definitions each paper uses.
 ## Regenerate
 
 ```bash
-python ../extract_literature.py                 # rdf_contact + thermo (self-tested)
-python ../digitize_figure.py --png fig13.png ... # rdf/*.csv  (see the script header)
+python code/run.py code/structure/benchmark_tools/extract_literature.py                 # rdf_contact + thermo (self-tested)
+python code/run.py code/structure/benchmark_tools/digitize_figure.py --png fig13.png ... # rdf/*.csv  (see the script header)
 ```

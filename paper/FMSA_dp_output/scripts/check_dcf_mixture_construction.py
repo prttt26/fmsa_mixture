@@ -13,7 +13,7 @@ import sys
 import numpy as np
 from scipy.integrate import quad
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'code' / 'fmsa_dcf' / 'src'))
 from fmsa_double_prop import FMSA_double_prop
 
 

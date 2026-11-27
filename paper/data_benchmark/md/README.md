@@ -1,3 +1,7 @@
+# Script location
+
+The scripts listed below are in [`code/structure/benchmark_tools/md/`](../../code/structure/benchmark_tools/md/). Run them from the repository root with `python code/run.py code/structure/benchmark_tools/md/<script>.py`; their data defaults still point here.
+
 # `md/` — LAMMPS-generated binary-LJ-mixture benchmark structure
 
 Generates partial radial distribution functions g_ij(r) for size-asymmetric
@@ -39,7 +43,7 @@ Engine: `~/.conda/envs/lammps_NO_python/bin/lmp_pyNO` (LAMMPS 12 Jun 2025), 48 c
 
 ## Validation (size ratio 2 → the TN 1331 target)
 
-`python run_md.py --state validation` then `python validate.py` (N=2048, 163 s):
+`python code/run.py code/structure/benchmark_tools/md/run_md.py --state validation` then `python code/run.py code/structure/benchmark_tools/md/validate.py` (N=2048, 163 s):
 
 - **Structure** — our g_ij(r) vs TN 1331 Appendix A, mean |Δ|:
   **g22 = 0.004, g12 = 0.011, g11 = 0.036** (g11 is the minority small species,
@@ -94,9 +98,9 @@ equilibration path, not the equilibrium state.
 Run / extend the sweep with:
 
 ```bash
-python run_sweep.py                     # full 60-point grid, ~1.7 h; resumes if interrupted
-python run_sweep.py --limit 12          # a 12-point taste
-python run_sweep.py --parallel 6 --threads 8
+python code/run.py code/structure/benchmark_tools/md/run_sweep.py                     # full 60-point grid, ~1.7 h; resumes if interrupted
+python code/run.py code/structure/benchmark_tools/md/run_sweep.py --limit 12          # a 12-point taste
+python code/run.py code/structure/benchmark_tools/md/run_sweep.py --parallel 6 --threads 8
 ```
 
 ## Small-k / finite-size trustworthiness (`finite_size.py`)
@@ -148,9 +152,9 @@ Result cached in `runs/finite_size.json`.
 ## Regenerate / extend
 
 ```bash
-python run_md.py --state validation --threads 16      # or ratio1.5 / ratio2.5 / ratio3.0
-python validate.py                                    # validation report + closure
-python ../convert.py --input runs/<label>/g.csv --from g --r-convention absolute \
+python code/run.py code/structure/benchmark_tools/md/run_md.py --state validation --threads 16      # or ratio1.5 / ratio2.5 / ratio3.0
+python code/run.py code/structure/benchmark_tools/md/validate.py                                    # validation report + closure
+python code/run.py code/structure/benchmark_tools/convert.py --input data_benchmark/md/runs/<label>/g.csv --from g --r-convention absolute \
        --rho <rho*> --x1 0.25 --to c,S_AL,S_BT        # g -> c, S(k)
 ```
 
@@ -168,10 +172,10 @@ swept in our own data. Grid definition and the reasoning are in
 `numerical_notes/results/benchmark/LAMMPS_MD/md_grid_dcf.md` and
 `numerical_notes/results/benchmark_rdf/LAMMPS_MD/md_grid_rdf.md`.
 
-    python run_grid.py                  # all 496, 23 concurrent x 2 threads
-    python run_grid.py --blocks B       # the LJ-HS family alone
-    python run_grid.py --dry-run        # list without running
-    bash after_grid.sh                  # wait, then rebuild both pools and re-score
+    python code/run.py code/structure/benchmark_tools/md/run_grid.py                  # all 496, 23 concurrent x 2 threads
+    python code/run.py code/structure/benchmark_tools/md/run_grid.py --blocks B       # the LJ-HS family alone
+    python code/run.py code/structure/benchmark_tools/md/run_grid.py --dry-run        # list without running
+    bash code/structure/benchmark_tools/md/after_grid.sh                  # wait, then rebuild both pools and re-score
 
 **Use 2 threads, not more.** Measured here on a 54k-step probe: 1 thread 274 s,
 2 threads 139 s (1.97x), 4 threads 82.6 s (3.3x), 8 threads 54.9 s (5.0x). More

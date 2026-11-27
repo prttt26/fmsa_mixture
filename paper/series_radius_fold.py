@@ -4,11 +4,13 @@
 For each state the physical branch is continued from the PY seed in real tau to
 locate its fold tau_fold (if any).  Three readings follow:
 
-  * monodromy on the circles |tau| = 0.90, 0.97, 1.03 tau_fold: a zero gap means
-    the circle encloses no branch point;
+  * monodromy on the circles |tau| = 0.90, 0.97, 1.03 tau_fold: a resolved sheet
+    change is evidence of nontrivial monodromy; a zero gap does not exclude
+    enclosed branch points, and a failed walk alone does not certify one;
   * the sign pattern of the Taylor coefficients of each amplitude component,
-    n = 1..25, read from the 0.90 tau_fold circle (one sign = Pringsheim's
-    condition, which puts the nearest singularity on the positive real axis);
+    n = 1..25, read from the 0.90 tau_fold circle after excluding coefficients
+    below the noise threshold (finite evidence only, not a proof of the
+    all-order sign condition needed for Pringsheim's theorem);
   * for states without a real fold, the fitted radius R_c and monodromy on a
     ladder of circles, with the real-axis solution checked at tau = 1.
 

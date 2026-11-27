@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "fmsa_mixture: first-order mean spherical approximation for hard-core Yukawa mixtures"
+authors:
+  - family-names: Pan
+    given-names: Runtong
+    orcid: "https://orcid.org/0000-0002-1082-7218"
+    affiliation: "University of California, Riverside"
+  - family-names: Wu
+    given-names: Jianzhong
+    orcid: "https://orcid.org/0000-0002-4582-5941"
+    affiliation: "University of California, Riverside"
+license: Apache-2.0
+repository-code: "https://github.com/prttt26/fmsa_mixture"

@@ -14,5 +14,5 @@ Checked and rejected as c_ij sources:
   as contact values, never c_ij(r) tables.
 
 To obtain c_ij(r) at any state point where only g_ij(r) is available, run the
-g → c conversion (`../../convert.py --from g ...`), keeping the truncation caveat
+g → c conversion (`code/structure/benchmark_tools/convert.py --from g ...`), keeping the truncation caveat
 in mind (see `../../README.md`).

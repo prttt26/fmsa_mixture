@@ -13,11 +13,11 @@ evaluated without iterating the Ornstein–Zernike equation.
 | energy route: `βF_ex/V`, `βP`, `βμ_i` | λ-integration, Laplace space; derivatives by finite difference |
 | compressibility route: `ĉ_ij(0)`, `(∂βP/∂ρ)_x`, stability matrix, `βP` and `βF_ex/V` | read off `ĉ(0)`; `P` and `F` by integration along the constant-composition ray |
 
-Method: R. Pan and J. Wu, *The First-Order Mean Spherical Approximation for
-Hard-Core Yukawa Mixtures: the Direct Correlation Function in Finite Closed Form*
-(in preparation). It completes for the mixture DCF the programme of Tang and Lu
+Method: R. Pan and J. Wu, *Analytical direct correlation functions for hard-core
+Yukawa mixtures in the first-order mean spherical approximation*. It completes for the mixture DCF the programme of Tang and Lu
 [J. Chem. Phys. 99, 9828 (1993); Mol. Phys. 84, 89 (1995)] and Tang, Tong and Lu
-[Fluid Phase Equilib. 134, 21 (1997)].
+[Fluid Phase Equilib. 134, 21 (1997)]. The Lean 4 formalization of the underlying
+identities is archived separately: <https://doi.org/10.5281/zenodo.24575980>.
 
 ## Requirements
 
@@ -149,3 +149,14 @@ a finite-difference Hessian of the energy route's hard-sphere free energy (three
 functionals); the FMT identity in real space; ray integration of the hard-sphere
 block returning the hard-sphere free energy; quadrature convergence; and
 Gibbs–Duhem for the energy route.
+
+## License and third-party data
+
+The code is released under the Apache License 2.0, see [`LICENSE`](LICENSE); please cite the work as given in
+[`CITATION.cff`](CITATION.cff).
+
+`paper/data_benchmark/` also contains numerical values taken from the
+literature, which the license above does not cover: tables of NIST Technical Note 1331 (Huber and Ely, 1989),
+values transcribed from Yu and Jin (2008), Ely (1986), Caccamo et al. (1998), Shukla (2000) and Mkanya et al.
+(2017), and curves digitized from a published figure. Cite the original sources, named next to each file, when
+using them.

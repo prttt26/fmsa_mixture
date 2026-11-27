@@ -4,7 +4,7 @@
 of a binary mixture as numbers.** The papers that mention S(k) only plot it or
 define it. There is therefore no `literature_direct` S(k) data file; S(k) for any
 state point is produced by converting from g_ij(r) or c_ij(r) with
-`../../convert.py --to S_AL,S_BT`.
+`code/structure/benchmark_tools/convert.py --to S_AL,S_BT`.
 
 ## S(k) conventions, recorded for later use
 
